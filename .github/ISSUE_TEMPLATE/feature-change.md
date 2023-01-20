@@ -2,7 +2,7 @@
 name: Feature Change
 about: Alteration, replacement, or partial removal of existing functionality
 title: "[Feature Change] the-feature-name"
-labels: 'Status: Pending, Type: Feature Change'
+labels: 'Status: Pending, Type: Feature Change, Type: Feature New'
 assignees: L483
 
 ---

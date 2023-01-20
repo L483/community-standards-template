@@ -38,7 +38,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 <!--
 add a bullet point list of other related issues in case there are any
 the list has to contain at least either:
-    the original issue that introduced the feature that should be changed
+    the original issue that introduced the feature that should be dropped
     OR
     the most recent resolved feature change request that changed that specific feature
 -->
