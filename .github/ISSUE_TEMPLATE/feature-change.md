@@ -1,6 +1,6 @@
 ---
 name: Feature Change
-about: Alteration or replacement of existing functionality
+about: Alteration, replacement, or partial removal of existing functionality
 title: "[Feature Change] the-feature-name"
 labels: 'Status: Pending, Type: Feature Change'
 assignees: L483
@@ -13,7 +13,8 @@ If the feature's functionality does not change essentially:
     Reuse the feature name mentioned in the title of the original issue that introduced the feature that should be changed
     OR
     Reuse the feature name mentioned in the title of the most recent resolved feature change request that changed that specific feature
-Otherwise, for drastical feature changes use a new fitting feature name.
+Otherwise, for drastical feature changes use a new fitting feature name
+
 The feature name has to be written in kebap-case.
 Keep all of the text encapsulated in comments, even though it will not be rendered.
 Only add text in the places that are filled with *None* default and replace *None* with your text.
