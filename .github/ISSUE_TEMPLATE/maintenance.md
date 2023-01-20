@@ -1,27 +1,30 @@
 ---
-name: Feature Change
-about: Alteration, replacement, or partial removal of existing functionality
-title: "[Feature Change] the-feature-name"
-labels: 'Status: Pending, Type: Feature Change, Type: Feature New'
+name: Maintenance
+about: Refactor specifically concerning adaption to updates of dependencies, target
+  platforms, etc.
+title: "[Maintenance] fitting-issue-name"
+labels: 'Status: Pending, Type: Maintenance'
 assignees: L483
 
 ---
 
 <!--
 How to use this template:
-If the feature's functionality does not change essentially:
-    Reuse the feature name mentioned in the title of the original issue that introduced the feature that should be changed
-    OR
-    Reuse the feature name mentioned in the title of the most recent resolved feature change request that changed that specific feature
-Otherwise, for drastical feature changes use a new fitting feature name
-
-The feature name has to be written in kebap-case.
+The issue name has to be written in kebap-case.
 Keep all of the text encapsulated in comments, even though it will not be rendered.
 Only add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
-## Problem/Motivation
-<!-- describe your problem or motivation that caused your feature change request as detailed as possible -->
+## Maintenance Object
+<!-- describe the parts that are in need of maintenance as specific as possible -->
+*None*
+
+## Reason
+<!-- describe why the mentioned parts are in need of maintenance as detailed as possible -->
+*None*
+
+## Impact
+<!-- describe potential side effects that can cause follow-up maintenance and which parts might be affected by this change to the best of your knowledge -->
 *None*
 
 ## Solution Proposal
@@ -37,13 +40,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 *None*
 
 ## Related Issues
-<!--
-add a bullet point list of other related issues in case there are any
-the list has to contain at least either:
-    the original issue that introduced the feature that should be changed
-    OR
-    the most recent resolved feature change request that changed that specific feature
--->
+<!-- add a bullet point list of other related issues in case there are any -->
 *None*
 
 <!--
