@@ -2,7 +2,7 @@
 name: Feature Request
 about: Introduction of new functionality
 title: "[Feature Request] the-feature-name"
-labels: 'Status: Pending, Type: Feature Change, Type: Feature New'
+labels: 'Status: Pending, Type: Feature New'
 assignees: L483
 
 ---
@@ -23,7 +23,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 *None*
 
 ## Acceptance Criteria
-<!-- specify the acceptance criteria as a task list: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists -->
+<!-- specify the acceptance criteria as a task list with one or more entries: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists -->
 *None*
 
 ## Further Information
