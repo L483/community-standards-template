@@ -1,7 +1,7 @@
 ---
 name: Feature Request
 about: Introduction of new functionality
-title: Feature Request - [your-feature-name]
+title: "[Feature Request] your-feature-name"
 labels: 'Status: Pending, Type: Feature New'
 assignees: L483
 
@@ -9,12 +9,10 @@ assignees: L483
 
 <!--
 How to use this template:
-The feature has to be written in kebap-case.
+The feature name has to be written in kebap-case.
 Keep all of the text encapsulated in comments, even though it will not be rendered.
 Only add text in the places that are filled with *None* default and replace *None* with your text.
 -->
-
-# Feature Request: *None* <!-- add-your-feature-name-here -->
 
 ## Problem/Motivation
 <!-- describe your problem or motivation that caused your feature request as detailed as possible -->
