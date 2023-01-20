@@ -1,7 +1,7 @@
 ---
 name: Feature Request
 about: Introduction of new functionality
-title: "[Feature Request] your-feature-name"
+title: "[Feature Request] the-feature-name"
 labels: 'Status: Pending, Type: Feature New'
 assignees: L483
 
