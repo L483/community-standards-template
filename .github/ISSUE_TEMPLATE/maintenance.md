@@ -23,12 +23,12 @@ Only add text in the places that are filled with *None* default and replace *Non
 <!-- describe why the mentioned parts are in need of maintenance as detailed as possible -->
 *None*
 
-## Impact
-<!-- describe potential side effects that can cause follow-up maintenance and which parts might be affected by this change to the best of your knowledge -->
-*None*
-
 ## Solution Proposal
 <!-- describe the solution you have in mind as detailed as possible -->
+*None*
+
+## Impact
+<!-- describe potential side effects of your solution proposal that can cause follow-up maintenance and which parts might be affected by this change to the best of your knowledge -->
 *None*
 
 ## Acceptance Criteria
