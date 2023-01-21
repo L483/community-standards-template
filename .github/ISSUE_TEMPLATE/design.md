@@ -14,7 +14,7 @@ Keep all of the text encapsulated in comments, even though it will not be render
 Only add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
-## Design Object
+## Object of Interest
 <!-- describe the UI/UX parts that are in need of a design change as specific as possible -->
 *None*
 

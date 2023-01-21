@@ -15,7 +15,7 @@ Keep all of the text encapsulated in comments, even though it will not be render
 Only add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
-## Maintenance Object
+## Object of Interest
 <!-- describe the parts that are in need of maintenance as specific as possible -->
 *None*
 
