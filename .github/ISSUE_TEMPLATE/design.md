@@ -27,7 +27,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 *None*
 
 ## Impact
-<!-- describe potential side effects of your solution proposal that can cause follow-up design changes as well as how/whether the corresponding functionality behind the design changes is affected -->
+<!-- describe potential side effects of your solution proposal that can cause follow-up issues (in particular design requests) as well as how/whether the corresponding functionality behind the design changes is affected to the best of your knowledge-->
 *None*
 
 ## Acceptance Criteria
@@ -39,7 +39,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 *None*
 
 ## Related Issues
-<!-- add a bullet point list of other related issues in case there are any, the feature request/change/drop that introduced the need for a design change would be particularly useful -->
+<!-- add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the need for a design change would be particularly useful -->
 *None*
 
 <!--

@@ -26,6 +26,10 @@ Only add text in the places that are filled with *None* default and replace *Non
 <!-- describe the solution you have in mind as detailed as possible -->
 *None*
 
+## Impact
+<!-- describe potential side effects of your solution proposal that can cause follow-up issues (in particular feature changes or feature drops) to the best of your knowledge -->
+*None*
+
 ## Acceptance Criteria
 <!-- specify the acceptance criteria as a task list with one or more entries: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists -->
 *None*

@@ -28,7 +28,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 *None*
 
 ## Impact
-<!-- describe potential side effects of your solution proposal that can cause follow-up maintenance and which parts might be affected by this change to the best of your knowledge -->
+<!-- describe potential side effects of your solution proposal that can cause follow-up issues (in particular maintenance requests) and which other parts might be affected by this change to the best of your knowledge -->
 *None*
 
 ## Acceptance Criteria
