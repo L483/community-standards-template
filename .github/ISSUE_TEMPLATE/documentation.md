@@ -40,7 +40,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 *None*
 
 ## Related Issues
-<!-- add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the need for a pipeline request would be particularly useful -->
+<!-- add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the need for a documentation request would be particularly useful -->
 *None*
 
 <!--
