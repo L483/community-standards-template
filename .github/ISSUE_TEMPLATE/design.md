@@ -2,7 +2,7 @@
 name: Design
 about: Refactor specifically concerning UI/UX improvements
 title: "[Design] fitting-issue-name"
-labels: 'Status: Pending, Type: Design'
+labels: 'Status: Pending, Type: Design, Type: Feature New'
 assignees: L483
 
 ---
