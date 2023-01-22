@@ -10,6 +10,7 @@ Only the newest release will receive active security support.
 
 Use GitHub's integrated functionality for reporting a security vulnerability.
 Just open a new *security advisory* and fill out the form.
-I/ We will look into it as soon as we receive notice of it and will resolve it to the best of our knowledge.
-I/ We will not decline reported vulnerabilities without providing a reason.
+
+I/ We will look into it as soon as we receive notice of it and will resolve it to the best of our knowledge.<br/>
+I/ We will not decline reported vulnerabilities without providing a reason.<br/>
 I/ We may contact you via your provided contact information, in case we need further information.
