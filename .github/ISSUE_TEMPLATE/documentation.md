@@ -11,7 +11,7 @@ assignees: L483
 <!--
 How to use this template:
 If there are multiple, little improvement suggestions, you can mention them bundled in the same issue, because the effort of writing issues should not drastically overweigh the effort of resolving them.
-Make sure to use the same order of improvements in each section when bundling multiple improvements inside one issue.
+Make sure to present each improvement distinctly from the rest and use the same order of improvements in each section when bundling multiple improvements inside one issue.
 However, create a separate issue for each issue that is concerned with the documentation suite itself.
 
 The issue name has to be written in kebap-case.
