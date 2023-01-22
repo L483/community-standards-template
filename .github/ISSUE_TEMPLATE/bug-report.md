@@ -2,7 +2,7 @@
 name: Bug Report
 about: Something is not working (correctly)
 title: "[Bug Report] fitting-issue-name"
-labels: 'Status: Pending, Type: Bug Report'
+labels: 'Status: Pending, Type: Bug Report, Type: Tooling'
 assignees: L483
 
 ---

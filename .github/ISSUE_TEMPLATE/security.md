@@ -9,21 +9,24 @@ assignees: L483
 
 <!--
 How to use this template:
+This template is NOT meant for reporting vulnerabilities.
+It is meant e.g. for switching from an outdated best practice, to a newer best practice, where the old best practice is not specifically vulnerable, but the newer best practice is more sophisticated and even more secure.
+
 The issue name has to be written in kebap-case.
 Keep all of the text encapsulated in comments, even though it will not be rendered.
 Only add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
 ## Object of Interest
-<!-- describe the parts that negatively impact the security as specific as possible -->
+<!-- describe the parts that could be improved as specific as possible -->
 *None*
 
-## Reason
-<!-- describe how/why/in which situations the security is negatively impacted as detailed as possible -->
+## Problem/Motivation
+<!-- describe how/why/in which situations the security is improved in contrast to the current approach as detailed as possible -->
 *None*
 
 ## Solution Proposal
-<!-- describe the solution you have in mind as detailed as possible, how/why/in which situations it will improve the security as well as the amount of security gain -->
+<!-- describe the solution you have in mind as detailed as possible -->
 *None*
 
 ## Impact
@@ -39,7 +42,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 *None*
 
 ## Related Issues
-<!-- add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the need for a security improvement would be particularly useful -->
+<!-- add a bullet point list of other related issues in case there are any -->
 *None*
 
 <!--
