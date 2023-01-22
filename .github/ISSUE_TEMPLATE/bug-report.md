@@ -18,7 +18,7 @@ Only add text in the places that are filled with *None* default and replace *Non
 <!-- describe the bug behavior as detailed as possible -->
 *None*
 
-## Expected Behavios
+## Expected Behavior
 <!-- describe how you expected the program to behave as detailed as possible -->
 
 ## Reproduction
