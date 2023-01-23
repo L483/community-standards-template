@@ -60,7 +60,7 @@ body:
     attributes:
       label: Solution Proposal
       description: Describe the solution you have in mind as detailed as possible, in case you know a fix.
-      placeholder: How can the bug be solved?
+      placeholder: How could the bug be solved?
       render: markdown
   - type: textarea
     id: impact
