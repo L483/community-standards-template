@@ -32,7 +32,7 @@ body:
     attributes:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
-      placeholder: How could it be made look correct/consistent/modern?
+      placeholder: How should it be designed to look correct/consistent/modern?
       render: markdown
   - type: textarea
     id: impact
