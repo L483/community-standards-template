@@ -94,8 +94,8 @@ body:
       label: Related Issues
       description: Add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the bug would be particularly useful.
       placeholder: |
-        - #00
         - #42
+        - #73
         ...
       render: markdown
   - type: markdown
