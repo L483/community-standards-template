@@ -1,0 +1,114 @@
+name: Bug Report Form
+description: Something is not working (correctly)
+title: "[Bug Report] kebap-cased-issue-name"
+labels: ["Status: Pending", "Type: Bug Report"]
+assignees:
+  - L483
+body:
+  - type: markdown
+    attributes:
+      value: |
+        All text areas support markdown syntax unless explicitly noted otherwise.
+  - type: input
+    id: affected-version
+    attributes:
+      label: Affected Version
+      description: Name the known version(s) of the project affected by the bug, or specify the branch/commit/issue/etc. where you noticed the bug for the first time.
+      placeholder: e.g. Project Version 1.2.1, Project Version 2.0.0
+    validations:
+      required: true
+  - type: input
+    id: system-information
+    attributes:
+      label: System Information
+      description: Name any potentially helpful information about the system(s) where the bug appeared, like the operating system and its version, the browser and its version, device information, etc.
+      placeholder: e.g Windows 10 Pro 21H2 64-bit, Firefox 108.0.2 64-bit
+    validations:
+        required: true
+  - type: textarea
+    id: bug-behavior
+    attributes:
+      label: Bug Behavior
+      description: Describe the bug behavior as detailed as possible.
+      placeholder: What happened?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attribute:
+      label: Expected Behavior
+      description: Describe how you expected the program to behave as specific as possible.
+      placeholder: What should have happened?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Describe how to reproduce the bug step-by-step as detailed as possible by using an ordered list.
+      placeholder: |
+        1. I started here.
+        2. Then, i did this.
+        ...
+      render: markdown
+    validation:
+      required: true
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Solution Proposal
+      description: Describe the solution you have in mind as detailed as possible, in case you know a fix.
+      placeholder: How can the bug be solved?
+      render: markdown
+  - type: textarea
+    id: impact
+    attribute:
+      label: Impact
+      description: Describe potential side effects of your solution proposal that can cause follow-up issues to the best of your knowledge.
+      placeholder: Could my solution proposal cause other problems?
+      render: markdown
+  - type: textarea
+    id: acceptance-criteria
+    attribute:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list with one or more entries.
+      placeholder: |
+        - [ ] first criteria
+        - [ ] second criteria
+        ...
+      render: markdown
+    validation:
+      required: true
+  - type: textarea
+    id: further-information
+    attribute:
+      label: Further Information
+      description: Add additional helpful, issue related information such as links, screenshots, sketches, your own considerations and thoughts, etc.
+      placeholder: Helpful information
+      render: markdown
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the bug would be particularly useful.
+      placeholder: |
+        "- #00"
+        "- #42"
+      render: markdown
+  - type: markdown
+    attributes:
+      value: |
+        **Information for contributors about label usage:**<br/>
+        
+        - select any number of fitting labels with a `Flag: ` prefix
+        - select any number of fitting labels with a `For: ` prefix
+        - select *exactly one* label with a `Priority: ` prefix
+        - select *exactly one* label with a `Scope: ` prefix
+        - do not tamper with the initial `Status: Pending` label when creating an issue
+        - do *never* add, remove, or change the associated label with a `Type: ` prefix
+        
+        Look at the label descriptions to get a better understanding of them and pick the most fitting.
+        If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
+        The issue should then be split into multiple issues in a way that each new issue falls *exactly into one* category.
