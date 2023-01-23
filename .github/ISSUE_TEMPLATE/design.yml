@@ -64,7 +64,7 @@ body:
     id: related-issues
     attributes:
       label: Related Issues
-      description: Add a bullet point list of other related issues in case there are any. In particular, the issue(s) (if you can narrow it/them down) that introduced the need for a design change would be helpful.
+      description: Add a bullet point list of other related issues, in case there are any. In particular, the issue(s) (if you can narrow it/them down) that introduced the need for a design change would be helpful.
       placeholder: |
         - #42
         - #73
