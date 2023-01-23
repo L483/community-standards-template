@@ -96,6 +96,7 @@ body:
       placeholder: |
         - #00
         - #42
+        ...
       render: markdown
   - type: markdown
     attributes:
