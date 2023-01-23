@@ -13,7 +13,7 @@ body:
     id: affected-version
     attributes:
       label: Affected Version
-      description: Name the known version(s) of the project affected by the bug, or specify the branch/commit/issue/etc. where you noticed the bug for the first time.
+      description: Name the known versions or main branches of the project that the bug affects.
       placeholder: e.g. Project Version 1.2.1, Project Version 2.0.0
     validations:
       required: true
@@ -29,7 +29,7 @@ body:
     id: bug-behavior
     attributes:
       label: Bug Behavior
-      description: Describe the bug behavior as detailed as possible.
+      description: Describe the bug's behavior as detailed as possible.
       placeholder: What happened?
       render: markdown
     validations:
@@ -38,7 +38,7 @@ body:
     id: expected-behavior
     attributes:
       label: Expected Behavior
-      description: Describe how you expected the program to behave as specific as possible.
+      description: Describe how you expected the program to behave as specifical as possible.
       placeholder: What should have happened?
       render: markdown
     validations:
@@ -47,7 +47,7 @@ body:
     id: reproduction
     attributes:
       label: Reproduction
-      description: Describe how to reproduce the bug step-by-step as detailed as possible by using an ordered list.
+      description: Describe how to reproduce the bug step-by-step as detailed as possible. Use an ordered list for this.
       placeholder: |
         1. I started here.
         2. Then, i did this.
@@ -59,24 +59,24 @@ body:
     id: solution-proposal
     attributes:
       label: Solution Proposal
-      description: Describe the solution you have in mind as detailed as possible, in case you know a fix.
+      description: Describe the solution that you have in mind as detailed as possible, in case you know a fix.
       placeholder: How could the bug be solved?
       render: markdown
   - type: textarea
     id: impact
     attributes:
       label: Impact
-      description: Describe potential side effects of your solution proposal that can cause follow-up issues to the best of your knowledge.
+      description: Describe potential side effects of your solution proposal, which could cause follow-up issues, to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
       render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
       label: Acceptance Criteria
-      description: Specify the acceptance criteria as a task list with one or more entries.
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
       placeholder: |
-        - [ ] first criteria
-        - [ ] second criteria
+        - [ ] Do this
+        - [ ] Do that
         ...
       render: markdown
     validations:
@@ -85,14 +85,14 @@ body:
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue related information such as links, screenshots, sketches, your own considerations and thoughts, etc.
+      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
       render: markdown
   - type: textarea
     id: related-issues
     attributes:
       label: Related Issues
-      description: Add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the bug would be particularly useful.
+      description: Add a bullet point list of other related issues, in case there are any. In particular, the issue(s) (if you can narrow it/them down) that introduced the bug would be helpful.
       placeholder: |
         - #42
         - #73
@@ -103,13 +103,13 @@ body:
       value: |
         **Information for contributors about label usage:**<br/>
         
-        - select *any number* of fitting labels with a `Flag: ` prefix
-        - select *any number* of fitting labels with a `For: ` prefix
-        - select **exactly one** label with a `Priority: ` prefix
-        - select **exactly one** label with a `Scope: ` prefix
-        - do **not tamper** with the initial `Status: Pending` label when creating an issue
-        - do **never** add, remove, or change the associated label with a `Type: ` prefix
+        - select *any number* of fitting labels that have a `Flag: ` prefix
+        - select *any number* of fitting labels that have a `For: ` prefix
+        - select **exactly one** label that has a `Priority: ` prefix
+        - select **exactly one** label that has a `Scope: ` prefix
+        - **never** tamper with the initial `Status: Pending` label when creating an issue
+        - **never** add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
         
-        Look at the label descriptions to get a better understanding of them and pick the most fitting.
+        Look at the label descriptions to grasp their proper usage and pick the most fitting.
         If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
-        The issue should then be split into multiple issues in a way that each new issue falls **exactly into one** category.
+        You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
