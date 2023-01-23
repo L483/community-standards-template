@@ -36,7 +36,7 @@ body:
       required: true
   - type: textarea
     id: expected-behavior
-    attribute:
+    attributes:
       label: Expected Behavior
       description: Describe how you expected the program to behave as specific as possible.
       placeholder: What should have happened?
@@ -53,7 +53,7 @@ body:
         2. Then, i did this.
         ...
       render: markdown
-    validation:
+    validations:
       required: true
   - type: textarea
     id: solution-proposal
@@ -64,14 +64,14 @@ body:
       render: markdown
   - type: textarea
     id: impact
-    attribute:
+    attributes:
       label: Impact
       description: Describe potential side effects of your solution proposal that can cause follow-up issues to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
       render: markdown
   - type: textarea
     id: acceptance-criteria
-    attribute:
+    attributes:
       label: Acceptance Criteria
       description: Specify the acceptance criteria as a task list with one or more entries.
       placeholder: |
@@ -79,11 +79,11 @@ body:
         - [ ] second criteria
         ...
       render: markdown
-    validation:
+    validations:
       required: true
   - type: textarea
     id: further-information
-    attribute:
+    attributes:
       label: Further Information
       description: Add additional helpful, issue related information such as links, screenshots, sketches, your own considerations and thoughts, etc.
       placeholder: Helpful information
