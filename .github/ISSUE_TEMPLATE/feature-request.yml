@@ -1,0 +1,88 @@
+name: Feature Request
+description: Introduction of new functionality
+title: "[Feature Change] kebap-cased-feature-name"
+labels: ["Status: Pending", "Type: Feature New"]
+assignees:
+  - L483
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you are here because you followed the instructions for a **drastic** *feature change*, here is what you must do inside this *feature request*:<br/>
+        Choose a new, fitting title for the new feature.
+        Then, look for the **original issue** that introduced the feature you want to replace.
+        Link the *original issue* inside the *"Related Issues"* section.<br/>
+        Afterwards, open a *feature drop request* for the feature you want to replace.
+        There, state and explain your replacement plans.
+        Link the *original issue* as well as this *feature request* in your new *feature drop request* inside the *"Related Issues"* section.
+        
+        All text areas support markdown syntax unless explicitly noted otherwise.
+  - type: textarea
+    id: problem-motivation
+    attributes:
+      label: Problem/Motivation
+      description: Describe your problem or motivation that caused your feature request as detailed as possible.
+      placeholder: Which needs does the project currently not fulfill?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Solution Proposal
+      description: Describe the solution that you have in mind as detailed as possible.
+      placeholder: What is the purpose of the new feature? How should the feature work? How should the feature be integrated?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular feature changes or feature drops), to the best of your knowledge.
+      placeholder: Could my solution proposal cause other problems?
+      render: markdown
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information
+      render: markdown
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Add a bullet point list of other related issues, in case there are any. If this feature should replace another, it has to contain, at least, the original issue that introduced the feature you want to replace.
+      placeholder: |
+        - #42
+        - #73
+        ...
+      render: markdown
+  - type: markdown
+    attributes:
+      value: |
+        **Information for contributors about label usage:**<br/>
+        
+        - select *any number* of fitting labels that have a `Flag: ` prefix
+        - select *any number* of fitting labels that have a `For: ` prefix
+        - select **exactly one** label that has a `Priority: ` prefix
+        - select **exactly one** label that has a `Scope: ` prefix
+        - **never** tamper with the initial `Status: Pending` label when creating an issue
+        - **never** add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+        Look at the label descriptions to grasp their proper usage and pick the most fitting.
+        If more than one `Type: ` label fits this issue, it is a good indicator that the issue mixes concerns.
+        You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
