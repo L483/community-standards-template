@@ -1,0 +1,93 @@
+name: Feature Change
+description: Alteration, replacement, or partial removal of existing functionality
+title: "[Feature Change] kebap-cased-issue-name"
+labels: ["Status: Pending", "Type: Feature Change"]
+assignees:
+  - L483
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the feature's functionality does not change essentially:<br/>
+        Look for the **original issue** that introduced the feature you want to change and **include its feature name** in the issue title.
+        Link the *original issue* inside the *"Related Issues"* section.<br/>
+        
+        For *drastic* feature changes, consider replacing the old feature with your idea:
+        **Do not use a *feature change request*.**<br/>
+        Instead, create a new *feature request* with a new, fitting title.
+        Then, look for the **original issue** that introduced the feature you want to replace.
+        Link the *original issue* in your new *feature request* inside the *"Related Issues"* section.<br/>
+        As a last step, open a *feature drop request* for the feature you want to replace.
+        There, state and explain your replacement plans.
+        Link the *original issue* as well as your new *feature request* in your new *feature drop request* inside the *"Related Issues"* section.
+        
+        All text areas support markdown syntax unless explicitly noted otherwise.
+  - type: textarea
+    id: problem-motivation
+    attributes:
+      label: Problem/Motivation
+      description: Describe your problem or motivation that caused your feature change request as detailed as possible.
+      placeholder: Which needs does the feature not fulfill? Is something missing? Is it too complicated or convoluted?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Solution Proposal
+      description: Describe the solution that you have in mind as detailed as possible.
+      placeholder: How could the feature be made more useful? How could the feature be simplified?
+      render: markdown
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular feature changes or feature drops), to the best of your knowledge.
+      placeholder: Could my solution proposal cause other problems?
+      render: markdown
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information
+      render: markdown
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Add a bullet point list of related issues that contains one or more entries. It has to contain, at least, the original issue that introduced the feature you want to change.
+      placeholder: |
+        - #42
+        - #73
+        ...
+      render: markdown
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        **Information for contributors about label usage:**<br/>
+        
+        - select *any number* of fitting labels that have a `Flag: ` prefix
+        - select *any number* of fitting labels that have a `For: ` prefix
+        - select **exactly one** label that has a `Priority: ` prefix
+        - select **exactly one** label that has a `Scope: ` prefix
+        - **never** tamper with the initial `Status: Pending` label when creating an issue
+        - **never** add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+        Look at the label descriptions to grasp their proper usage and pick the most fitting.
+        If more than one `Type: ` label fits this issue, it is a good indicator that the issue mixes concerns.
+        You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
