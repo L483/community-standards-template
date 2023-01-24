@@ -39,6 +39,8 @@ body:
       description: If it is about the documentation suite, describe the solution that you have in mind as detailed as possible. Otherwise, write how you would update the documentation/code comments or at least name the essential points.
       placeholder: How would you formulate the documentation/code comments? How could the documentation suite be improved?
       render: markdown
+    validations:
+      required: true
   - type: textarea
     id: impact
     attributes:
