@@ -34,6 +34,8 @@ body:
       description: Describe the solution that you have in mind as detailed as possible.
       placeholder: How should it be designed to look correct/consistent/modern?
       render: markdown
+    validations:
+      required: true
   - type: textarea
     id: impact
     attributes:
