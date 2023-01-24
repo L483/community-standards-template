@@ -18,7 +18,7 @@ body:
         Then, look for the **original issue** that introduced the feature you want to replace.
         Link the *original issue* in your new *feature request* inside the *"Related Issues"* section.<br/>
         As a last step, open a *feature drop request* for the feature you want to replace.
-        There, state and explain your replacement plans.
+        There, state and explain your replacement plans instead of only writing about a *pure* drop.
         Link the *original issue* as well as your new *feature request* in your new *feature drop request* inside the *"Related Issues"* section.
         
         All text areas support markdown syntax unless explicitly noted otherwise.
