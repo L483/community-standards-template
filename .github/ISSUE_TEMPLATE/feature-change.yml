@@ -36,8 +36,10 @@ body:
     attributes:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
-      placeholder: How could the feature be made more useful? How could the feature be simplified?
+      placeholder: How could the feature be made more useful? How could the feature be simplified? How should the feature work after the changes are applied? How should the changes be integrated?
       render: markdown
+    validations:
+      required: true
   - type: textarea
     id: impact
     attributes:
