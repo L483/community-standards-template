@@ -1,0 +1,88 @@
+name: Maintenance
+description: Refactor specifically concerning adaption to updates of dependencies, target
+  platforms, etc.
+title: "[Maintenance] kebap-cased-issue-name"
+labels: ["Status: Pending", "Type: Maintenance"]
+assignees:
+  - L483
+body:
+  - type: markdown
+    attributes:
+      value: |
+        All text areas support markdown syntax unless explicitly noted otherwise.
+  - type: textarea
+    id: object-of-interest
+    attributes:
+      label: Object of Interest
+      description: Describe the parts that require maintenance as specifical as possible.
+      placeholder: Which packages/libraries/tools/etc. are outdated/need updates/have to be reconfigured/etc.?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Describe why the mentioned parts require maintenance as detailed as possible.
+      placeholder: What released a new version/update (with breaking changes)? Did they release new, useful, project-relevant features? Was it a security update?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Solution Proposal
+      description: Describe the solution that you have in mind as detailed as possible.
+      placeholder: To which version should which parts be upgraded? How should which parts be reconfigured?
+      render: markdown
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular maintenance requests), to the best of your knowledge.
+      placeholder: Could my solution proposal cause other problems?
+      render: markdown
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information
+      render: markdown
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Add a bullet point list of other related issues, in case there are any.
+      placeholder: |
+        - #42
+        - #73
+        ...
+      render: markdown
+  - type: markdown
+    attributes:
+      value: |
+        **Information for contributors about label usage:**<br/>
+        
+        - select *any number* of fitting labels that have a `Flag: ` prefix
+        - select *any number* of fitting labels that have a `For: ` prefix
+        - select **exactly one** label that has a `Priority: ` prefix
+        - select **exactly one** label that has a `Scope: ` prefix
+        - **never** tamper with the initial `Status: Pending` label when creating an issue
+        - **never** add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+        Look at the label descriptions to grasp their proper usage and pick the most fitting.
+        If more than one `Type: ` label fits this issue, it is a good indicator that the issue mixes concerns.
+        You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
