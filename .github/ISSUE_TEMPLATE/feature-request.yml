@@ -1,6 +1,6 @@
 name: Feature Request
 description: Introduction of new functionality
-title: "[Feature Change] kebap-cased-feature-name"
+title: "[Feature Request] kebap-cased-feature-name"
 labels: ["Status: Pending", "Type: Feature New"]
 assignees:
   - L483
