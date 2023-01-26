@@ -53,7 +53,7 @@ body:
       description: Describe how to reproduce the bug step-by-step as detailed as possible. Use an ordered list for this.
       placeholder: |
         1. I started here.
-        2. Then, i did this.
+        2. Then, I did this.
         ...
       render: markdown
     validations:
