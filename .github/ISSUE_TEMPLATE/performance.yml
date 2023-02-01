@@ -15,7 +15,6 @@ body:
       label: Object of Interest
       description: Describe the parts that negatively impact the performance as specifical as possible.
       placeholder: What seems low? Where did analysis reveal bottlenecks/memory leaks/etc.? What parts do not adhere to performant coding practice?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -28,7 +27,6 @@ body:
         1. I started here.
         2. Then, I did this.
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -37,14 +35,12 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible. Explain how/why/in which situations it will improve the performance and quantify the performance gain (new Big O notation).
       placeholder: How could performance be gained?
-      render: markdown
   - type: textarea
     id: impact
     attributes:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues, to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -54,26 +50,23 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
       label: Related Issues
-      description: Add a bullet point list of other related issues, in case there are any. In particular, the issue(s) (if you can narrow it/them down) that introduced the need for a performance improvement would be helpful.
+      description: Add a bullet point list of other related issues, in case there are any. In particular, the issue(s) (if you can narrow it/them down) that introduced the need for performance improvement would be helpful.
       placeholder: |
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
