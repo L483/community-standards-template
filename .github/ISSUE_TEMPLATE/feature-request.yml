@@ -1,7 +1,7 @@
 name: Feature Request
 description: Introduction of new functionality
 title: "[Feature Request] kebap-cased-feature-name"
-labels: ["Status: Pending", "Type: Feature New"]
+labels: ["Status: Pending", "Type: Feature Request"]
 assignees:
   - L483
 body:
@@ -23,7 +23,6 @@ body:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your feature request as detailed as possible.
       placeholder: Which needs does the project currently not fulfill?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -32,7 +31,6 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
       placeholder: What is the purpose of the new feature? How should the feature work? How should the feature be integrated?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -41,7 +39,6 @@ body:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular feature changes or feature drops), to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -51,16 +48,14 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -70,7 +65,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
