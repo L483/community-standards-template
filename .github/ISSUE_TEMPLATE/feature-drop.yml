@@ -12,9 +12,9 @@ body:
         
         If you are here because you followed the instructions for a **drastic** *feature change*, please ensure you have followed **all** instructions for creating the new *feature request*.
         Here is what you must do inside this *feature drop request*:<br/>
-        Choose the *feature drop request* title as usual.
-        State and explain your **replacement** plans instead of only writing about a *pure* drop.
-        Link the *original issue* as well as your new *feature request* inside the *"Related Issues"* section.
+        1. Choose the *feature drop request* title as usual.
+        2. State and explain your **replacement** plans instead of only writing about a *pure* drop.
+        3. Link the *original issue* as well as your new *feature request* inside the *"Related Issues"* section.
         
         All text areas support markdown syntax unless explicitly noted otherwise.
   - type: textarea
