@@ -18,7 +18,6 @@ body:
       label: Object of Interest
       description: Describe the parts that require overwork as specifical as possible.
       placeholder: What are the files/modules/classes/components/functions/etc. that need a refactor? 
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -27,7 +26,6 @@ body:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your refactor request as detailed as possible.
       placeholder: "For example: Is it about formatting the code? Could variables/functions/etc. be better named? Should/Why should something be handled more abstractly? ..."
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -36,7 +34,6 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
       placeholder: "For example: How should it be formatted (e.g., name a style guide)? How should the variables/functions/etc. be renamed? How could something be handled more abstractly? ..."
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -45,7 +42,6 @@ body:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular refactor requests), to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -55,16 +51,14 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -74,7 +68,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
