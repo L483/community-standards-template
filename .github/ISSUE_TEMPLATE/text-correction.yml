@@ -22,7 +22,6 @@ body:
       label: Object of Interest
       description: Describe the parts that require a text correction as specifical as possible.
       placeholder: Where is bad language in use? Where does text imply something wrong? Where are grammar/punctuation/spelling/etc. mistakes?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -31,7 +30,6 @@ body:
       label: Reason
       description: Describe why the current choice of words was bad/which other implications the text carries, or name which language rules the text violates.
       placeholder: Why is it considered bad language? What other things does the text imply? What kind of other mistakes does the text contain (grammar/punctuation/spelling/etc.)?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -40,7 +38,6 @@ body:
       label: Solution Proposal
       description: Write how you would write the text or at least name the essential points.
       placeholder: Improved text
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -52,16 +49,14 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -71,7 +66,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
