@@ -1,6 +1,5 @@
 name: Documentation
-description: Improvements to the documentation suite, as well as documentation pages and
-  code comments
+description: Improvements to the documentation suite, as well as documentation pages and code comments
 title: "[Documentation] kebap-cased-issue-name"
 labels: ["Status: Pending", "Type: Documentation"]
 assignees:
@@ -20,7 +19,6 @@ body:
       label: Object of Interest
       description: Describe the documentation (suite) parts that require overwork as specifical as possible.
       placeholder: Where is the documentation, or where are code comments wrong/missing? Where could the documentation suite be improved?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -28,8 +26,7 @@ body:
     attributes:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your documentation request as detailed as possible.
-      placeholder: Why does the documentation, or why do code comments seem wrong/incomplete? Why does the documentation suite need an improvement?
-      render: markdown
+      placeholder: Why does the documentation, or why do code comments seem wrong/incomplete? Why does the documentation suite need improvement?
     validations:
       required: true
   - type: textarea
@@ -38,7 +35,6 @@ body:
       label: Solution Proposal
       description: If it is about the documentation suite, describe the solution that you have in mind as detailed as possible. Otherwise, write how you would update the documentation/code comments or at least name the essential points.
       placeholder: How would you formulate the documentation/code comments? How could the documentation suite be improved?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -47,7 +43,6 @@ body:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues (usually only relevant when suggesting changes to the documentation suite), to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -57,7 +52,6 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -66,7 +60,6 @@ body:
       label: Further Information
       description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -76,7 +69,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
