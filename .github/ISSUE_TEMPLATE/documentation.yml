@@ -11,7 +11,7 @@ body:
       value: |
         If there are *multiple little improvement suggestions*, you can mention them bundled within a *single issue* because the effort of writing issues should not drastically surpass the effort of resolving them.<br/>
         Make sure to present each improvement **distinctly** from the rest and to use the **same order** of refinements in each section when bundling multiple improvements inside one issue.<br/>
-        However, create a **separate issue** for each issue that is concerned with the documentation suite itself.
+        However, create a **separate issue** for each issue that is concerned with the *documentation suite* itself.
         
         All text areas support markdown syntax unless explicitly noted otherwise.
   - type: textarea
