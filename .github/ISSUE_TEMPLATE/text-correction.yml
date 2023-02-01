@@ -1,0 +1,89 @@
+name: Text Correction
+description: Refactor of any bad language/wrong text implications and grammar/punctuation/spelling fixes, etc.
+title: "[Text Correction] kebap-cased-issue-name"
+labels: ["Status: Pending", "Type: Text Correction"]
+assignees:
+  - L483
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do **not** abuse a *text correction* issue to refactor the code itself, like renaming a variable or class.
+        Do **not** abuse a *text correction* issue to fix a bug caused by, for example, a typo, and use a *bug report* instead.
+        Use it **only** for corrections of string contents, documentation parts, code comments, and any text that will be displayed to users.
+        
+        If there are *multiple little improvement suggestions*, you can mention them bundled within a *single issue* because the effort of writing issues should not drastically surpass the effort of resolving them.<br/>
+        Make sure to present each improvement **distinctly** from the rest and to use the **same order** of refinements in each section when bundling multiple improvements inside one issue.
+        
+        All text areas support markdown syntax unless explicitly noted otherwise.
+  - type: textarea
+    id: object-of-interest
+    attributes:
+      label: Object of Interest
+      description: Describe the parts that require a text correction as specifical as possible.
+      placeholder: Where is bad language in use? Where does text imply something wrong? Where are grammar/punctuation/spelling/etc. mistakes?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Describe why the current choice of words was bad/which other implications the text carries, or name which language rules the text violates.
+      placeholder: Why is it considered bad language? What other things does the text imply? What kind of other mistakes does the text contain (grammar/punctuation/spelling/etc.)?
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Solution Proposal
+      description: Write how you would write the text or at least name the essential points.
+      placeholder: Improved text
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information
+      render: markdown
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Add a bullet point list of other related issues, in case there are any.
+      placeholder: |
+        - #42
+        - #73
+        ...
+      render: markdown
+  - type: markdown
+    attributes:
+      value: |
+        **Information for contributors about label usage:**<br/>
+        
+        - select *any number* of fitting labels that have a `Flag: ` prefix
+        - select *any number* of fitting labels that have a `For: ` prefix
+        - select **exactly one** label that has a `Priority: ` prefix
+        - select **exactly one** label that has a `Scope: ` prefix
+        - **never** tamper with the initial `Status: Pending` label when creating an issue
+        - **never** add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+        Look at the label descriptions to grasp their proper usage and pick the most fitting.
+        If more than one `Type: ` label fits this issue, it is a good indicator that the issue mixes concerns.
+        You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
