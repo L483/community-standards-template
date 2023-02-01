@@ -19,7 +19,6 @@ body:
       label: Object of Interest
       description: Describe the test suite parts/ the tests that require overwork as specifical as possible.
       placeholder: Where are tests wrong/incomplete/missing? Where could the test suite be improved?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -28,7 +27,6 @@ body:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your testing request as detailed as possible.
       placeholder:  Why do tests seem wrong/incomplete/missing? Why does the test suite need an improvement?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -37,7 +35,6 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
       placeholder: How would you write the tests? How could the test suite be improved?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -46,7 +43,6 @@ body:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues (usually only relevant when suggesting changes to the test suite), to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -56,7 +52,6 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -65,7 +60,6 @@ body:
       label: Further Information
       description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -75,7 +69,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
