@@ -9,12 +9,12 @@ body:
     attributes:
       value: |
         If you are here because you followed the instructions for a **drastic** *feature change*, here is what you must do inside this *feature request*:<br/>
-        Choose a new, fitting title for the new feature.
-        Then, look for the **original issue** that introduced the feature you want to replace.
-        Link the *original issue* inside the *"Related Issues"* section.<br/>
-        Afterwards, open a *feature drop request* for the feature you want to replace.
-        There, state and explain your replacement plans instead of only writing about a *pure* drop.
-        Link the *original issue* as well as this *feature request* in your new *feature drop request* inside the *"Related Issues"* section.
+        1. Choose a new, fitting title for the new feature.
+        2. Then, look for the **original issue** that introduced the feature you want to replace.
+        3. Link the *original issue* inside the *"Related Issues"* section.<br/>
+        4. Afterwards, open a *feature drop request* for the feature you want to replace.
+           1. There, state and explain your replacement plans instead of only writing about a *pure* drop.
+           2. Link the *original issue* as well as this *feature request* in your new *feature drop request* inside the *"Related Issues"* section.
         
         All text areas support markdown syntax unless explicitly noted otherwise.
   - type: textarea
