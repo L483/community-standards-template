@@ -15,7 +15,6 @@ body:
       label: Object of Interest
       description: Describe the tool(s) that should be introduced or the tool suite parts that require overwork as specifical as possible.
       placeholder: What tool(s) should be used? What tool and which parts of it need to be adjusted?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -23,8 +22,7 @@ body:
     attributes:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your tool request as detailed as possible.
-      placeholder: What are the advantages of introducing that/these tool(s) to the project? Why does the tool suite need an improvement?
-      render: markdown
+      placeholder: What are the advantages of introducing that/these tool(s) to the project? Why does the tool suite need improvement?
     validations:
       required: true
   - type: textarea
@@ -33,7 +31,6 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
       placeholder: How should the new tools/ the existing tool suite be configured?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -42,7 +39,6 @@ body:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular tool requests), to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -52,16 +48,14 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -71,7 +65,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
