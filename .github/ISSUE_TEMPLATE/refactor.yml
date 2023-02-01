@@ -26,7 +26,7 @@ body:
     attributes:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your refactor request as detailed as possible.
-      placeholder: For example: Is it about formatting the code? Could variables/functions/etc. be better named? Should/Why should something be handled more abstractly? ...
+      placeholder: "For example: Is it about formatting the code? Could variables/functions/etc. be better named? Should/Why should something be handled more abstractly? ..."
       render: markdown
     validations:
       required: true
@@ -35,7 +35,7 @@ body:
     attributes:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
-      placeholder: For example: How should it be formatted (e.g., name a style guide)? How should the variables/functions/etc. be renamed? How could something be handled more abstractly? ...
+      placeholder: "For example: How should it be formatted (e.g., name a style guide)? How should the variables/functions/etc. be renamed? How could something be handled more abstractly? ..."
       render: markdown
     validations:
       required: true
