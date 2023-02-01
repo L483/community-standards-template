@@ -23,7 +23,6 @@ body:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your feature drop request as detailed as possible.
       placeholder: Why should the feature be dropped? Is it too complicated? Is it not needed? Is its functionality already covered by another feature? Is it going to be replaced by another feature?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -32,7 +31,6 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
       placeholder: What needs to be removed to drop the whole feature (or its remains)? Should it be replaced by another feature, and if yes, which one?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -41,7 +39,6 @@ body:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular feature changes or feature drops), to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -51,16 +48,14 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -70,7 +65,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
     validations:
       required: true
   - type: markdown
