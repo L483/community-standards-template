@@ -8,6 +8,11 @@ body:
   - type: markdown
     attributes:
       value: |
+        Do **not abuse** a *testing* issue to test out new stuff that may or may not be included in the project, like, experimenting with new tools to see whether you can get them to work or whether they are appropriate for the project.
+        Use a *feature request* or a *feature change request* and work on them on their own branch.
+        If you are unsure whether the experiments might be included in the end, mark them with the `Flag: Suggestion` label.
+        Keep in mind not all *opened* and *accepted* issues have to be resolved. They can also be *abandoned* if the experiments turn out as a fail.
+        
         If there are *multiple little improvement suggestions*, you can mention them bundled within a *single issue* because the effort of writing issues should not drastically surpass the effort of resolving them.<br/>
         Make sure to present each improvement **distinctly** from the rest and to use the **same order** of refinements in each section when bundling multiple improvements inside one issue.
         However, create a **separate** issue for each issue that is concerned with the *test suite* itself.
