@@ -15,7 +15,6 @@ body:
       label: Object of Interest
       description: Describe the pipeline parts that require overwork as specifical as possible.
       placeholder: Which stage(s) are affected?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -24,7 +23,6 @@ body:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your pipeline request as detailed as possible.
       placeholder: Was the pipeline slow? Did/ Why did the pipeline fail?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -33,7 +31,6 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible.
       placeholder: How could the pipeline finish faster? How could the pipeline work again?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -42,7 +39,6 @@ body:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular pipeline requests), to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -52,16 +48,14 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -71,7 +65,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
