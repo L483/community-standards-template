@@ -15,7 +15,6 @@ body:
       label: Question
       description: Write your question in full length as detailed as possible. Describe the object of confusion as specifical as possible. Also, describe possible subquestions or follow-up questions.
       placeholder: What confuses me? Can the question be split/structured into multiple, separately answerable subquestions? Do I have follow-up questions?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -24,7 +23,6 @@ body:
       label: Answer Contents
       description: Describe the information that the answer should provide as detailed as possible.
       placeholder: What information should the answer include to be satisfactory?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -36,16 +34,14 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
     id: further-information
     attributes:
       label: Further Information
-      description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -55,7 +51,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
