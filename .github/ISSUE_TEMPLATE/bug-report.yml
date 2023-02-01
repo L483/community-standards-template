@@ -1,6 +1,6 @@
 name: Bug Report
 description: Something is not working (correctly)
-title: "[Bug Report] kebap-cased-issue-name"
+title: "[Bug Report] kebap-cased-shortened-bug-behavior"
 labels: ["Status: Pending", "Type: Bug Report"]
 assignees:
   - L483
