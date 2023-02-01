@@ -34,7 +34,6 @@ body:
       label: Bug Behavior
       description: Describe the bug's behavior as detailed as possible.
       placeholder: What happened?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -43,7 +42,6 @@ body:
       label: Expected Behavior
       description: Describe how you expected the program to behave as specifical as possible.
       placeholder: What should have happened?
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -55,7 +53,6 @@ body:
         1. I started here.
         2. Then, I did this.
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -64,14 +61,12 @@ body:
       label: Solution Proposal
       description: Describe the solution that you have in mind as detailed as possible, in case you know a fix.
       placeholder: How could the bug be solved?
-      render: markdown
   - type: textarea
     id: impact
     attributes:
       label: Impact
       description: Describe potential side effects of your solution proposal, which could cause follow-up issues, to the best of your knowledge.
       placeholder: Could my solution proposal cause other problems?
-      render: markdown
   - type: textarea
     id: acceptance-criteria
     attributes:
@@ -81,7 +76,6 @@ body:
         - [ ] Do this
         - [ ] Do that
         ...
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -90,7 +84,6 @@ body:
       label: Further Information
       description: Add additional helpful, issue-related information such as links, screenshots, sketches, considerations, thoughts, etc.
       placeholder: Helpful information
-      render: markdown
   - type: textarea
     id: related-issues
     attributes:
@@ -100,7 +93,6 @@ body:
         - #42
         - #73
         ...
-      render: markdown
   - type: markdown
     attributes:
       value: |
