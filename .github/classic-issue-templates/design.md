@@ -1,7 +1,7 @@
 ---
 name: Design
 about: Refactor specifically concerning UI/UX improvements
-title: "[Design] fitting-issue-name"
+title: "[Design] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Design"
 assignees: L483
 ---
