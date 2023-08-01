@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # How to use this issue form
+        ### How to use this issue form
         Look for the **original issue** that introduced the feature you want to remove and use its feature name as the issue title.
         
         <details>
@@ -39,7 +39,9 @@ body:
           If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
           You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
         </details>
+        
         ---
+        
   - type: textarea
     id: problem-motivation
     attributes:
