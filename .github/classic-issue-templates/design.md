@@ -69,7 +69,7 @@ e.g.:
 *None*
 
 <!--
-Information for contributors about label usage:<br/>
+Information for contributors about label usage:
         
   - select any number of fitting labels that have a `Flag: ` prefix
   - select any number of fitting labels that have a `For: ` prefix
