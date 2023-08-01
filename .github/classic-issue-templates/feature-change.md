@@ -1,8 +1,8 @@
 ---
 name: Feature Change
 about: Alteration, replacement, or partial removal of existing functionality
-title: "[Feature Change] the-feature-name"
-labels: 'Status: Pending, Type: Feature Change'
+title: "[Feature Change] kebap-cased-issue-name"
+labels: "Status: Pending, Type: Feature Change"
 assignees: L483
 
 ---
@@ -10,55 +10,79 @@ assignees: L483
 <!--
 How to use this template:
 If the feature's functionality does not change essentially:
-    Reuse the feature name mentioned in the title of the original issue that introduced the feature that should be changed
-    OR
-    Reuse the feature name mentioned in the title of the most recent resolved feature change request that changed that specific feature
-Otherwise, for drastical feature changes use a new fitting feature name
+  1. Look for the ORIGINAL ISSUE that introduced the feature you want to change and INCLUDE ITS FEATURE NAME in the issue title.
+  2. Link the "original issue" inside the "Related Issues" section.
+        
+  For "drastic" feature changes, consider replacing the old feature with your idea:
+  DO NOT USE A "FEATURE CHANGE REQUEST".
+  1. Instead, create a new "feature request" with a new, fitting title.
+  2. Then, look for the ORIGINAL ISSUE that introduced the feature you want to replace.
+  3. Link the "original issue" in your new "feature request" inside the "Related Issues" section.
+  4. As a last step, open a "feature drop request" for the feature you want to replace.
+    1. There, state and explain your replacement plans instead of only writing about a "pure" drop.
+    2. Link the "original issue" as well as your new "feature request" in your new "feature drop request" inside the "Related Issues" section.
 
-The feature name has to be written in kebap-case.
-Keep all of the text encapsulated in comments, even though it will not be rendered.
-Only add text in the places that are filled with *None* default and replace *None* with your text.
+Keep ALL of the text encapsulated in comments, even though it will not be rendered.
+ONLY add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
 ## Problem/Motivation
-<!-- describe your problem or motivation that caused your feature change request as detailed as possible -->
+<!--
+Describe your problem or motivation that caused your feature change request as detailed as possible.
+Which needs does the feature not fulfill? Is something missing? Is it too complicated or convoluted?
+-->
 *None*
 
 ## Solution Proposal
-<!-- describe the solution you have in mind as detailed as possible -->
+<!--
+Describe the solution that you have in mind as detailed as possible.
+How could the feature be made more useful? How could the feature be simplified? How should the feature work after the changes are applied? How should the changes be integrated?
+-->
 *None*
 
 ## Impact
-<!-- describe potential side effects of your solution proposal that can cause follow-up issues (in particular feature changes or feature drops) to the best of your knowledge -->
+<!--
+Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular feature changes or feature drops), to the best of your knowledge.
+-->
 *None*
 
 ## Acceptance Criteria
-<!-- specify the acceptance criteria as a task list with one or more entries: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists -->
+<!--
+Specify the acceptance criteria as a task list that contains one or more entries.
+e.g.:
+  - [ ] Do this
+  - [ ] Do that
+  ...
+-->
 *None*
 
 ## Further Information
-<!-- add additional helpful, issue related information such as links, screenshots, sketches, your own considerations and thoughts, etc. -->
+<!--
+Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
+-->
 *None*
 
 ## Related Issues
 <!--
-add a bullet point list of other related issues in case there are any
-the list has to contain at least either:
-    the original issue that introduced the feature that should be changed
-    OR
-    the most recent resolved feature change request that changed that specific feature
+Add a bullet point list of related issues that contains one or more entries. It has to contain, at least, the original issue that introduced the feature you want to change.
+e.g.:
+  - #42
+  - #73
+  ...
 -->
 *None*
 
 <!--
-Label usage:
-- select any number of fitting labels with a "Flag: " prefix
-- select any number of fitting labels with a "For: " prefix
-- select EXACTLY ONE label with a "Priority: " prefix
-- select EXACTLY ONE label with a "Scope: " prefix
-- do not add, change or remove any label with a "Status: " or "Type: " prefix
-
-Look at the label descriptions to get a better understanding of them and pick the most fitting.
-If more than one "Type: " label fits the issue, it is a good indicator that the issue mixes concerns.
-The issue should then be split into multiple issues in a way that each new issue falls EXACTLY INTO ONE category.
+Information for contributors about label usage:
+        
+  - select any number of fitting labels that have a `Flag: ` prefix
+  - select any number of fitting labels that have a `For: ` prefix
+  - select EXACTLY ONE label that has a `Priority: ` prefix
+  - select EXACTLY ONE label that has a `Scope: ` prefix
+  - NEVER tamper with the initial `Status: Pending` label when creating an issue
+  - NEVER add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+  Look at the label descriptions to grasp their proper usage and pick the most fitting.
+  If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
+  You should then split this issue into multiple issues so that each new issue falls EXACTLY INTO ONE category.
 -->
