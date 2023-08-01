@@ -82,7 +82,7 @@ Information for contributors about label usage:
   - NEVER tamper with the initial `Status: Pending` label when creating an issue
   - NEVER add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
         
-  Look at the label descriptions to grasp their proper usage and pick the most fitting.
-  If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
-  You should then split this issue into multiple issues so that each new issue falls EXACTLY INTO ONE category.
+Look at the label descriptions to grasp their proper usage and pick the most fitting.
+If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
+You should then split this issue into multiple issues so that each new issue falls EXACTLY INTO ONE category.
 -->
