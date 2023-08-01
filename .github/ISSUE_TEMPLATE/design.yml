@@ -8,9 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### How to use this issue form
+        #### How to use this issue form
 
-        <br/>
         <details>
           <summary><b>
             Click here for: How to handle multiple little design improvement suggestions in a single issue
@@ -20,7 +19,6 @@ body:
         </details>
         All text areas support markdown syntax unless explicitly noted otherwise.
         
-        <br/>
         <details>
           <summary><b>
             Click here for: Information for contributors about label usage
@@ -36,10 +34,8 @@ body:
           If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
           You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
         </details>
-        <br/>
         
         ---
-        
   - type: textarea
     id: object-of-interest
     attributes:
