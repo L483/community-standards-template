@@ -9,11 +9,13 @@ body:
     attributes:
       value: |
         ### How to use this issue form
+        <br/>
         Do **not** abuse a *bug report* to report *security vulnerabilities*.<br/>
         In such instances, act as described in the project's *security policy* or if the project does not specify how to report these incidents, open a *security advisory*.
         
         All text areas support markdown syntax unless explicitly noted otherwise.
 
+        <br/>
         <details>
           <summary><b>
             Click here for: Information for contributors about label usage
@@ -29,6 +31,7 @@ body:
           If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
           You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
         </details>
+        <br/>
         
         ---
         
