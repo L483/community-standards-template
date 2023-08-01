@@ -1,62 +1,81 @@
 ---
 name: Feature Drop
-about: Removal of a whole feature (or its remains) without substition
-title: "[Feature Drop] the-feature-name"
-labels: 'Status: Pending, Type: Feature Drop'
+about: Removal of a whole feature (or its remains)
+title: "[Feature Drop] kebap-cased-feature-name"
+labels: "Status: Pending, Type: Feature Drop"
 assignees: L483
-
 ---
 
 <!--
-How to use this template:
-Reuse the feature name mentioned in the title of the original issue that introduced the feature that should be dropped
-OR
-Reuse the feature name mentioned in the title of the most recent resolved feature change request that changed that specific feature
+Look for the ORIGINAL ISSUE that introduced the feature you want to remove and use its feature name as the issue title.
+        
+If you are here because you followed the instructions for a DRASTIC "feature change", please ensure you have followed ALL instructions for creating the new "feature request".
+Here is what you must do inside this "feature drop request":
+  1. Choose the "feature drop request" title as usual.
+  2. State and explain your REPLACEMENT plans instead of only writing about a "pure" drop.
+  3. Link the "original issue" as well as your new "feature request" inside the "Related Issues" section.
 
-The feature name has to be written in kebap-case.
-Keep all of the text encapsulated in comments, even though it will not be rendered.
-Only add text in the places that are filled with *None* default and replace *None* with your text.
+Keep ALL of the text encapsulated in comments, even though it will not be rendered.
+ONLY add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
 ## Problem/Motivation
-<!-- describe your problem or motivation that caused your feature drop request as detailed as possible -->
+<!--
+Describe your problem or motivation that caused your feature drop request as detailed as possible.
+Why should the feature be dropped? Is it too complicated? Is it not needed? Is its functionality already covered by another feature? Is it going to be replaced by another feature?
+-->
 *None*
 
 ## Solution Proposal
-<!-- describe the solution you have in mind as detailed as possible -->
+<!--
+Describe the solution that you have in mind as detailed as possible.
+What needs to be removed to drop the whole feature (or its remains)? Should it be replaced by another feature, and if yes, which one?
+-->
 *None*
 
 ## Impact
-<!-- describe potential side effects of your solution proposal that can cause follow-up issues (in particular feature changes or feature drops) to the best of your knowledge -->
+<!--
+Describe potential side effects of your solution proposal, which could cause follow-up issues (in particular feature changes or feature drops), to the best of your knowledge.
+-->
 *None*
 
 ## Acceptance Criteria
-<!-- specify the acceptance criteria as a task list with one or more entries: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists -->
+<!--
+Specify the acceptance criteria as a task list that contains one or more entries.
+e.g.:
+  - [ ] Do this
+  - [ ] Do that
+  ...
+-->
 *None*
 
 ## Further Information
-<!-- add additional helpful, issue related information such as links, screenshots, sketches, your own considerations and thoughts, etc. -->
+<!--
+Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
+-->
 *None*
 
 ## Related Issues
 <!--
-add a bullet point list of other related issues in case there are any
-the list has to contain at least either:
-    the original issue that introduced the feature that should be dropped
-    OR
-    the most recent resolved feature change request that changed that specific feature
+Add a bullet point list of related issues that contains one or more entries. It has to contain, at least, the original issue that introduced the feature you want to remove.
+e.g.:
+  - #42
+  - #73
+  ...
 -->
 *None*
 
 <!--
-Label usage:
-- select any number of fitting labels with a "Flag: " prefix
-- select any number of fitting labels with a "For: " prefix
-- select EXACTLY ONE label with a "Priority: " prefix
-- select EXACTLY ONE label with a "Scope: " prefix
-- do not add, change or remove any label with a "Status: " or "Type: " prefix
-
-Look at the label descriptions to get a better understanding of them and pick the most fitting.
-If more than one "Type: " label fits the issue, it is a good indicator that the issue mixes concerns.
-The issue should then be split into multiple issues in a way that each new issue falls EXACTLY INTO ONE category.
+Information for contributors about label usage:
+        
+  - select any number of fitting labels that have a `Flag: ` prefix
+  - select any number of fitting labels that have a `For: ` prefix
+  - select EXACTLY ONE label that has a `Priority: ` prefix
+  - select EXACTLY ONE label that has a `Scope: ` prefix
+  - NEVER tamper with the initial `Status: Pending` label when creating an issue
+  - NEVER add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+  Look at the label descriptions to grasp their proper usage and pick the most fitting.
+  If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
+  You should then split this issue into multiple issues so that each new issue falls EXACTLY INTO ONE category.
 -->
