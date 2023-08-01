@@ -4,7 +4,6 @@ about: Refactor specifically concerning performance improvements
 title: "[Performance] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Performance"
 assignees: L483
-
 ---
 
 <!--
