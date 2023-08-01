@@ -30,7 +30,7 @@ body:
           You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
         </details>
         
-        ------
+        ---
         
   - type: input
     id: affected-version
