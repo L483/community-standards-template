@@ -10,13 +10,11 @@ body:
       value: |
         ### How to use this issue form
         
-        <br/>
-        
         Do **not** abuse a *bug report* to report *security vulnerabilities*.<br/>
         In such instances, act as described in the project's *security policy* or if the project does not specify how to report these incidents, open a *security advisory*.
         
         All text areas support markdown syntax unless explicitly noted otherwise.
-        <br/>
+
         <details>
           <summary><b>
             Click here for: Information for contributors about label usage
@@ -35,7 +33,6 @@ body:
         <br/>
         
         ---
-        
   - type: input
     id: affected-version
     attributes:
