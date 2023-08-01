@@ -1,56 +1,85 @@
 ---
 name: Performance
 about: Refactor specifically concerning performance improvements
-title: "[Performance] fitting-issue-name"
-labels: 'Status: Pending, Type: Performance'
+title: "[Performance] kebap-cased-issue-name"
+labels: "Status: Pending, Type: Performance"
 assignees: L483
 
 ---
 
 <!--
 How to use this template:
-The issue name has to be written in kebap-case.
-Keep all of the text encapsulated in comments, even though it will not be rendered.
-Only add text in the places that are filled with *None* default and replace *None* with your text.
+Keep ALL of the text encapsulated in comments, even though it will not be rendered.
+ONLY add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
 ## Object of Interest
-<!-- describe the parts that negatively impact the performance as specific as possible -->
+<!--
+Describe the parts that negatively impact the performance as specifical as possible.
+What seems low? Where did analysis reveal bottlenecks/memory leaks/etc.? What parts do not adhere to performant coding practice?
+-->
 *None*
 
-## Reason
-<!-- describe how/why/in which situations the performance is negatively impacted as detailed as possible -->
+## Problem/Motivation
+<!--
+Describe how/why/in which situations the performance is negatively impacted as detailed as possible. A classification of the code complexity (Big O notation) is always welcome. If the situation is reproducible, provide a step-by-step guide in the form of an ordered list.
+
+What are the conclusions of the performance analysis (e.g. a memory leak)? Why is the current implementation not performant? The performant-problematic situation can be reproduced as follows:
+1. I started here.
+2. Then, I did this.
+...
+-->
 *None*
 
 ## Solution Proposal
-<!-- describe the solution you have in mind as detailed as possible, how/why/in which situations it will improve the performance as well as the amount of performance gain -->
+<!--
+Describe the solution that you have in mind as detailed as possible. Explain how/why/in which situations it will improve the performance and quantify the performance gain (new Big O notation).
+-->
 *None*
 
 ## Impact
-<!-- describe potential side effects of your solution proposal that can cause follow-up issues to the best of your knowledge -->
+<!--
+Describe potential side effects of your solution proposal, which could cause follow-up issues, to the best of your knowledge.
+-->
 *None*
 
 ## Acceptance Criteria
-<!-- specify the acceptance criteria as a task list with one or more entries: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists -->
+<!--
+Specify the acceptance criteria as a task list that contains one or more entries.
+e.g.:
+  - [ ] Do this
+  - [ ] Do that
+  ...
+-->
 *None*
 
 ## Further Information
-<!-- add additional helpful, issue related information such as links, screenshots, sketches, your own considerations and thoughts, etc. -->
+<!--
+Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
+-->
 *None*
 
 ## Related Issues
-<!-- add a bullet point list of other related issues in case there are any, the issue(s) (if it/they can be narrowed down) that introduced the need for a performance improvement would be particularly useful -->
+<!--
+Add a bullet point list of other related issues, in case there are any. In particular, the issue(s) (if you can narrow it/them down) that introduced the need for performance improvement would be helpful.
+e.g.:
+  - #42
+  - #73
+  ...
+-->
 *None*
 
 <!--
-Label usage:
-- select any number of fitting labels with a "Flag: " prefix
-- select any number of fitting labels with a "For: " prefix
-- select EXACTLY ONE label with a "Priority: " prefix
-- select EXACTLY ONE label with a "Scope: " prefix
-- do not add, change or remove any label with a "Status: " or "Type: " prefix
-
-Look at the label descriptions to get a better understanding of them and pick the most fitting.
-If more than one "Type: " label fits the issue, it is a good indicator that the issue mixes concerns.
-The issue should then be split into multiple issues in a way that each new issue falls EXACTLY INTO ONE category.
+Information for contributors about label usage:
+        
+  - select any number of fitting labels that have a `Flag: ` prefix
+  - select any number of fitting labels that have a `For: ` prefix
+  - select EXACTLY ONE label that has a `Priority: ` prefix
+  - select EXACTLY ONE label that has a `Scope: ` prefix
+  - NEVER tamper with the initial `Status: Pending` label when creating an issue
+  - NEVER add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+Look at the label descriptions to grasp their proper usage and pick the most fitting.
+If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
+You should then split this issue into multiple issues so that each new issue falls EXACTLY INTO ONE category.
 -->
