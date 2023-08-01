@@ -8,7 +8,25 @@ body:
   - type: markdown
     attributes:
       value: |
+        # How to use this issue form
         All text areas support markdown syntax unless explicitly noted otherwise.
+
+        <details>
+          <summary><b>
+            Click here for: Information for contributors about label usage
+          </b></summary>        
+          - select *any number* of fitting labels that have a `Flag: ` prefix
+          - select *any number* of fitting labels that have a `For: ` prefix
+          - select **exactly one** label that has a `Priority: ` prefix
+          - select **exactly one** label that has a `Scope: ` prefix
+          - **never** tamper with the initial `Status: Pending` label when creating an issue
+          - **never** add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
+        
+          Look at the label descriptions to grasp their proper usage and pick the most fitting.
+          If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
+          You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
+        </details>
+        ---
   - type: textarea
     id: object-of-interest
     attributes:
@@ -67,18 +85,3 @@ body:
         - #42
         - #73
         ...
-  - type: markdown
-    attributes:
-      value: |
-        **Information for contributors about label usage:**<br/>
-        
-        - select *any number* of fitting labels that have a `Flag: ` prefix
-        - select *any number* of fitting labels that have a `For: ` prefix
-        - select **exactly one** label that has a `Priority: ` prefix
-        - select **exactly one** label that has a `Scope: ` prefix
-        - **never** tamper with the initial `Status: Pending` label when creating an issue
-        - **never** add, remove, or change any associations (or the lack thereof) between an issue and label that has a `Type: ` prefix
-        
-        Look at the label descriptions to grasp their proper usage and pick the most fitting.
-        If more than one `Type: ` label fits this issue, it is a good indicator that the issue mixes concerns.
-        You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
