@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### How to use this issue form
+        #### How to use this issue form
         
         Do **not** abuse a *bug report* to report *security vulnerabilities*.<br/>
         In such instances, act as described in the project's *security policy* or if the project does not specify how to report these incidents, open a *security advisory*.
@@ -30,8 +30,6 @@ body:
           If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
           You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
         </details>
-        <br/>
-        
         ---
   - type: input
     id: affected-version
