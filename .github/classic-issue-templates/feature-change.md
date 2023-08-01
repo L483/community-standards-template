@@ -13,7 +13,7 @@ If the feature's functionality does not change essentially:
   1. Look for the ORIGINAL ISSUE that introduced the feature you want to change and INCLUDE ITS FEATURE NAME in the issue title.
   2. Link the "original issue" inside the "Related Issues" section.
         
-  For "drastic" feature changes, consider replacing the old feature with your idea:
+  For DRASTIC feature changes, consider replacing the old feature with your idea:
   DO NOT USE A "FEATURE CHANGE REQUEST".
   1. Instead, create a new "feature request" with a new, fitting title.
   2. Then, look for the ORIGINAL ISSUE that introduced the feature you want to replace.
