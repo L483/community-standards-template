@@ -10,23 +10,24 @@ body:
       value: |
         ### How to use this issue form
 
-        <br/>
         <details>
           <summary><b>
             Click here for: How to handle multiple little documentation improvement suggestions in a single issue
           </b></summary>
+          
           If there are *multiple little improvement suggestions*, you can mention them bundled within a *single issue* because the effort of writing issues should not drastically surpass the effort of resolving them.<br/>
           Make sure to present each improvement **distinctly** from the rest and to use the **same order** of refinements in each section when bundling multiple improvements inside one issue.<br/>
           However, create a **separate issue** for each issue that is concerned with the *documentation suite* itself.
+        
         </details>
-        <br/>
         
         All text areas support markdown syntax unless explicitly noted otherwise.
-        <br/>
+        
         <details>
           <summary><b>
             Click here for: Information for contributors about label usage
-          </b></summary>        
+          </b></summary> 
+          
           - select *any number* of fitting labels that have a `Flag: ` prefix
           - select *any number* of fitting labels that have a `For: ` prefix
           - select **exactly one** label that has a `Priority: ` prefix
@@ -37,11 +38,10 @@ body:
           Look at the label descriptions to grasp their proper usage and pick the most fitting.
           If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
           You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
+        
         </details>
-        <br/>
         
         ---
-      
   - type: textarea
     id: object-of-interest
     attributes:
