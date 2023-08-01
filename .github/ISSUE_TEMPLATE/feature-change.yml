@@ -9,19 +9,23 @@ body:
     attributes:
       value: |
         ### How to use this issue form
+        
         <details>
           <summary><b>
             Click here for: How to handle non-essential feature changes
           </b></summary>
+          
           If the feature's functionality does not change essentially:<br/>
           1. Look for the **original issue** that introduced the feature you want to change and **include its feature name** in the issue title.
           2. Link the *original issue* inside the *"Related Issues"* section.<br/>
+          
         </details>
         
         <details>
           <summary><b>
             Click here for: How to handle drastic feature changes
           </b></summary>
+          
           For **drastic** feature changes, consider replacing the old feature with your idea:
           **Do not use a *feature change request*.**<br/>
           1. Instead, create a new *feature request* with a new, fitting title.
@@ -30,6 +34,7 @@ body:
           4. As a last step, open a *feature drop request* for the feature you want to replace.
             1. There, state and explain your replacement plans instead of only writing about a *pure* drop.
             2. Link the *original issue* as well as your new *feature request* in your new *feature drop request* inside the *"Related Issues"* section.
+            
         </details>
         
         All text areas support markdown syntax unless explicitly noted otherwise.
@@ -37,7 +42,8 @@ body:
         <details>
           <summary><b>
             Click here for: Information for contributors about label usage
-          </b></summary>        
+          </b></summary> 
+          
           - select *any number* of fitting labels that have a `Flag: ` prefix
           - select *any number* of fitting labels that have a `For: ` prefix
           - select **exactly one** label that has a `Priority: ` prefix
@@ -48,10 +54,10 @@ body:
           Look at the label descriptions to grasp their proper usage and pick the most fitting.
           If more than one `Type: ` label fits the issue, it is a good indicator that the issue mixes concerns.
           You should then split this issue into multiple issues so that each new issue falls **exactly into one** category.
+        
         </details>
         
         ---
-        
   - type: textarea
     id: problem-motivation
     attributes:
