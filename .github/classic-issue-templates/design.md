@@ -8,11 +8,11 @@ assignees: L483
 
 <!--
 How to use this template:
-Keep ALL of the text encapsulated in comments, even though it will not be rendered.
-ONLY add text in the places that are filled with *None* default and replace *None* with your text.
-
 If there are "multiple little improvement suggestions", you can mention them bundled within a "single issue" because the effort of writing issues should not drastically surpass the effort of resolving them.
 Make sure to present each improvement DISTINCTLY from the rest and to use the SAME ORDER of refinements in each section when bundling multiple improvements inside one issue.
+
+Keep ALL of the text encapsulated in comments, even though it will not be rendered.
+ONLY add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
 ## Object of Interest

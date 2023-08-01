@@ -8,11 +8,11 @@ assignees: L483
 
 <!--
 How to use this template:
-Keep ALL of the text encapsulated in comments, even though it will not be rendered.
-ONLY add text in the places that are filled with *None* default and replace *None* with your text.
-
 Do NOT abuse a "bug report" to report "security vulnerabilities".
 In such instances, act as described in the project's "security policy" or if the project does not specify how to report these incidents, open a "security advisory".
+
+Keep ALL of the text encapsulated in comments, even though it will not be rendered.
+ONLY add text in the places that are filled with *None* default and replace *None* with your text.
 -->
 
 ## Affected Version
