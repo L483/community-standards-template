@@ -12,7 +12,7 @@ body:
         1. Look for the **original issue** that introduced the feature you want to change and **include its feature name** in the issue title.
         2. Link the *original issue* inside the *"Related Issues"* section.<br/>
         
-        For *drastic* feature changes, consider replacing the old feature with your idea:
+        For **drastic** feature changes, consider replacing the old feature with your idea:
         **Do not use a *feature change request*.**<br/>
         1. Instead, create a new *feature request* with a new, fitting title.
         2. Then, look for the **original issue** that introduced the feature you want to replace.
