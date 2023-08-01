@@ -30,7 +30,7 @@ body:
     attributes:
       label: Problem/Motivation
       description: Describe your problem or motivation that caused your testing request as detailed as possible.
-      placeholder:  Why do tests seem wrong/incomplete/missing? Why does the test suite need an improvement?
+      placeholder: Why do tests seem wrong/incomplete/missing? Why does the test suite need an improvement?
     validations:
       required: true
   - type: textarea
