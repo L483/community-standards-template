@@ -11,9 +11,9 @@ body:
         ### How to use this issue form
         
         <details>
-          <summary><u><b>
+          <summary><span style="text-decoration: underline;"><b>
             Click here if you followed the instructions for a drastic feature change
-          </b></u></summary>
+          </b></span></summary>
           
           1. Choose a new, fitting title for the new feature.
           2. Then, look for the **original issue** that introduced the feature you want to replace.
@@ -27,9 +27,9 @@ body:
         All text areas support markdown syntax unless explicitly noted otherwise.
 
         <details>
-          <summary><u><b>
+          <summary><span style="text-decoration: underline;"><b>
             Click here for: Information for contributors about label usage
-          </b></u></summary>
+          </b></span></summary>
           
           - select *any number* of fitting labels that have a `Flag: ` prefix
           - select *any number* of fitting labels that have a `For: ` prefix
