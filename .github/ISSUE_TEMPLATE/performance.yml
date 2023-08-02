@@ -43,14 +43,20 @@ body:
     id: problem-motivation
     attributes:
       label: Problem/Motivation
-      description: Describe how/why/in which situations the performance is negatively impacted as detailed as possible. A classification of the code complexity (Big O notation) is always welcome. If the situation is reproducible, provide a step-by-step guide in the form of an ordered list.
+      description: Describe how/why/in which situations the performance is negatively impacted as detailed as possible. A classification of the code complexity (Big O notation) is always welcome.
       placeholder: |
-        What are the conclusions of the performance analysis (e.g. a memory leak)? Why is the current implementation not performant? The performant-problematic situation can be reproduced as follows:
+        What are the conclusions of the performance analysis (e.g. a memory leak)? Why is the current implementation not performant?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: In case the performant-problematic situation is reproducible, describe how to reproduce the situation step-by-step as detailed as possible. Use an ordered list for this.
+      placeholder: |
         1. I started here.
         2. Then, I did this.
         ...
-    validations:
-      required: true
   - type: textarea
     id: solution-proposal
     attributes:
