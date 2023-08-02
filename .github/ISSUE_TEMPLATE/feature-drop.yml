@@ -13,9 +13,9 @@ body:
         Look for the **original issue** that introduced the feature you want to remove and use its feature name as the issue title.
         
         <details>
-          <summary><u><b>
+          <summary><b>
             Click here if you followed the instructions for a drastic feature change
-          </b></u></summary>
+          </b></summary>
           
           Please ensure you have followed **all** instructions for creating the new *feature request*.
           Here is what you must do inside this *feature drop request*:<br/>
@@ -28,9 +28,9 @@ body:
         All text areas support markdown syntax unless explicitly noted otherwise.
 
         <details>
-          <summary><u><b>
+          <summary><b>
             Click here for: Information for contributors about label usage
-          </b></u></summary>
+          </b></summary>
           
           - select *any number* of fitting labels that have a `Flag: ` prefix
           - select *any number* of fitting labels that have a `For: ` prefix

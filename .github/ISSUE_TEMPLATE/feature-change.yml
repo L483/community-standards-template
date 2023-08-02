@@ -11,9 +11,9 @@ body:
         ### How to use this issue form
         
         <details>
-          <summary><u><b>
+          <summary><b>
             Click here for: How to handle non-essential feature changes
-          </b></u></summary>
+          </b></summary>
           
           If the feature's functionality does not change essentially:<br/>
           1. Look for the **original issue** that introduced the feature you want to change and **include its feature name** in the issue title.
@@ -22,9 +22,9 @@ body:
         </details>
         
         <details>
-          <summary><u><b>
+          <summary><b>
             Click here for: How to handle drastic feature changes
-          </b></u></summary>
+          </b></summary>
           
           For **drastic** feature changes, consider replacing the old feature with your idea:
           **Do not use a *feature change request*.**<br/>
@@ -40,9 +40,9 @@ body:
         All text areas support markdown syntax unless explicitly noted otherwise.
 
         <details>
-          <summary><u><b>
+          <summary><b>
             Click here for: Information for contributors about label usage
-          </b></u></summary> 
+          </b></summary> 
           
           - select *any number* of fitting labels that have a `Flag: ` prefix
           - select *any number* of fitting labels that have a `For: ` prefix
