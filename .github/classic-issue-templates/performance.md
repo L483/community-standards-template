@@ -21,12 +21,18 @@ What seems low? Where did analysis reveal bottlenecks/memory leaks/etc.? What pa
 
 ## Problem/Motivation
 <!--
-Describe how/why/in which situations the performance is negatively impacted as detailed as possible. A classification of the code complexity (Big O notation) is always welcome. If the situation is reproducible, provide a step-by-step guide in the form of an ordered list.
+Describe how/why/in which situations the performance is negatively impacted as detailed as possible. A classification of the code complexity (Big O notation) is always welcome.
+What are the conclusions of the performance analysis (e.g. a memory leak)? Why is the current implementation not performant?
+-->
+*None*
 
-What are the conclusions of the performance analysis (e.g. a memory leak)? Why is the current implementation not performant? The performant-problematic situation can be reproduced as follows:
-1. I started here.
-2. Then, I did this.
-...
+## Reproduction
+<!--
+In case the performant-problematic situation is reproducible, describe how to reproduce the situation step-by-step as detailed as possible. Use an ordered list for this.
+e.g.:
+  1. I started here.
+  2. Then, I did this.
+  ...
 -->
 *None*
 
