@@ -16,7 +16,7 @@ body:
           <summary><span style="text-decoration: underline;"><b>
             Click here for: Information for contributors about label usage
           </b></span></summary>
-          
+
           - select *any number* of fitting labels that have a `Flag: ` prefix
           - select *any number* of fitting labels that have a `For: ` prefix
           - select **exactly one** label that has a `Priority: ` prefix
