@@ -4,7 +4,6 @@ about: Improvements to the test suite, as well as pointing out wrong or missing 
 title: "[Testing] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Testing"
 assignees: L483
-
 ---
 
 <!--
