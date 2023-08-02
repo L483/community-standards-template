@@ -11,7 +11,7 @@ assignees: L483
 How to use this template:
 Do NOT ABUSE a "testing" issue to test out new stuff that may or may not be included in the project, like, experimenting with new tools to see whether you can get them to work or whether they are appropriate for the project.
 Use a "feature request" or a "feature change request" instead, work on them on their own branch, and (if fitting) mark them with the `Flag: Suggestion` label.
-Keep in mind not all "opened" and "accepted" issues have to be resolved. They can also be "abandoned" if the experiments turn out as a fail.
+Keep in mind not all "opened" and "accepted" issues have to be resolved. They can also be "abandoned" if the experiments turn out as failure.
         
 If there are "multiple little improvement suggestions", you can mention them bundled within a "single issue" because the effort of writing issues should not drastically surpass the effort of resolving them.
 Make sure to present each improvement DISTINCTLY from the rest and to use the SAME ORDER of refinements in each section when bundling multiple improvements inside one issue.
