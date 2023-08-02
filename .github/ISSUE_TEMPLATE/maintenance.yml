@@ -13,9 +13,9 @@ body:
         All text areas support markdown syntax unless explicitly noted otherwise.
 
         <details>
-          <summary><b>
+          <summary><u><b>
             Click here for: Information for contributors about label usage
-          </b></summary>
+          </b></u></summary>
           
           - select *any number* of fitting labels that have a `Flag: ` prefix
           - select *any number* of fitting labels that have a `For: ` prefix
