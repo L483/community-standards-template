@@ -331,6 +331,8 @@ usage() {
         6. Currently, the script expects that the provided assignees are unique, even when only appending assignees.
            It does not make any effort to create a duplicate-free list of assignees.
         7. Currently, all indentations are hard-coded as 2 spaces.
+        8. The script is not the most efficient solution. But it is a working solution.
+           It is expected that the script is only run once during the setup of a repository and sparingly afterwards.
 
         Caveats starting with "Currently" may be addressed in future versions if requested.
 EOF
