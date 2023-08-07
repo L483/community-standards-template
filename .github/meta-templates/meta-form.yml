@@ -3,7 +3,7 @@ description: Consists of resuable snippets from other issue templates to easily 
 title: "[<PLACEHOLDER>] kebap-cased-issue-name"
 labels: ["Status: Pending", "Type: <PLACEHOLDER>"]
 assignees:
-  - L483
+  - username
 body:
   - type: markdown
     attributes:
