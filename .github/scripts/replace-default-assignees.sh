@@ -14,7 +14,7 @@ set -o errexit   # abort on nonzero exitstatus
 set -o nounset   # abort on unbound variable
 set -o pipefail  # do not hide errors within pipes
 # set -o verbose # trace every executed command (before variable expansion)
-set -o xtrace  # trace what gets actually executed (after variable expansion)
+# set -o xtrace  # trace what gets actually executed (after variable expansion)
 
 # script run options: end --------------------------------------------------------------------------------------------
 # functions: start ---------------------------------------------------------------------------------------------------
@@ -294,41 +294,46 @@ handle_file() {
 # Returns:
 #   Nothing
 usage() {
-    echo "Usage: ${0} [-a|--append-only] [-d|--delete-only] [assignees...]"
-    echo "Replaces the \"assignees\" field's entries of a GitHub issue template with the specified assignees."
-    echo "Assignees are inserted in the same order they are passed as arguments."
-    echo "It distinguishes between GitHub \"issue form\" .yml files, and \"classic\" GitHub issue template .md files."
-    echo "The file is modified in-place."
-    echo ""
-    echo "Options:"
-    echo "  -a | --append-only      no assignees are deleted"
-    echo "  -d | --delete-only      no assignees are appended"
-    echo "  -h | --help             print this usage information"
-    echo ""
-    echo "Arguments:"
-    echo "  assignees: the list of assignees to be appended"
-    echo ""
-    echo "Exit status:"
-    echo "  0: if the script was executed successfully"
-    echo "  1: if an unexpected option was passed"
-    echo ""
-    echo "Caveats:"
-    echo "  1. If both the \"append-only\" and \"delete-only\" options are set, the file remains unchanged."
-    echo "  2. If no arguments are passed, the script prints this usage information."
-    echo "     To clear the \"assignees\" field, pass the \"delete-only\" option without any assignees."
-    echo "  3. Currently, the script makes specific and static assumptions about the file locations."
-    echo "     The meta templates must be inside the \".github/meta-templates\" directory."
-    echo "     All other GitHub \"issue form\" .yml files must be inside the \".github/ISSUE_TEMPLATE\" directory."
-    echo "     All other \"classic\" GitHub issue template .md files must be inside the \".github/classic-issue-templates\" directory."
-    echo "  4. The script expects that the provided files are correct."
-    echo "     It does not make any effort to validate the files and may fail if the files are malformed."
-    echo "  5. Currently, the script expects that the provided assignees are valid GitHub usernames."
-    echo "     It does not make any effort to validate the assignees and just inserts them."
-    echo "  6. Currently, the script expects that the provided assignees are unique, even when only appending assignees."
-    echo "     It does not make any effort to create a duplicate-free list of assignees."
-    echo "  7. Currently, all indentations are hard-coded as 2 spaces."
-    echo ""
-    echo "  Caveats starting with \"Currently\" may be addressed in future versions if requested."
+    cat << EOF
+
+    Usage: ${0} [-a|--append-only] [-d|--delete-only] [assignees...]
+
+    Description:
+    Replaces the "assignees" field's entries of a GitHub issue template with the specified assignees.
+    Assignees are inserted in the same order they are passed as arguments.
+    It distinguishes between GitHub "issue form" .yml files, and "classic" GitHub issue template .md files.
+    The file is modified in-place.
+
+    Options:
+        -a | --append-only      no assignees are deleted
+        -d | --delete-only      no assignees are appended
+        -h | --help             print this usage information, do nothing else
+
+    Arguments:
+        assignees: the list of assignees to be appended
+
+    Exit status:
+        0: if the script was executed successfully
+        1: if an unexpected option was passed
+
+    Caveats:
+        1. If both the "append-only" and "delete-only" options are set, the file remains unchanged.
+        2. If no arguments are passed, the script prints this usage information.
+           To clear the "assignees" field, pass the "delete-only" option without any assignees.
+        3. Currently, the script makes specific and static assumptions about the file locations.
+           The meta templates must be inside the ".github/meta-templates" directory.
+           All other GitHub "issue form" .yml files must be inside the ".github/ISSUE_TEMPLATE" directory.
+           All other "classic" GitHub issue template .md files must be inside the ".github/classic-issue-templates" directory.
+        4. The script expects that the provided files are correct.
+           It does not make any effort to validate the files and may fail if the files are malformed.
+        5. Currently, the script expects that the provided assignees are valid GitHub usernames.
+           It does not make any effort to validate the assignees and just inserts them.
+        6. Currently, the script expects that the provided assignees are unique, even when only appending assignees.
+           It does not make any effort to create a duplicate-free list of assignees.
+        7. Currently, all indentations are hard-coded as 2 spaces.
+
+        Caveats starting with "Currently" may be addressed in future versions if requested.
+EOF
 }
 
 # functions: end -----------------------------------------------------------------------------------------------------
