@@ -3,7 +3,7 @@ description: Something needs clarification or further information and may uncove
 title: "[Question] kebap-cased-shortened-question"
 labels: ["Status: Pending", "Type: Question"]
 assignees:
-  - L483
+  - username
 body:
   - type: markdown
     attributes:

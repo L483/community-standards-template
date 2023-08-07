@@ -3,7 +3,7 @@ description: Refactor of any bad language/wrong text implications and grammar/pu
 title: "[Text Correction] kebap-cased-issue-name"
 labels: ["Status: Pending", "Type: Text Correction"]
 assignees:
-  - L483
+  - username
 body:
   - type: markdown
     attributes:

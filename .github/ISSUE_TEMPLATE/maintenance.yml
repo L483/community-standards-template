@@ -3,7 +3,7 @@ description: Refactor specifically concerning adaption to updates of dependencie
 title: "[Maintenance] kebap-cased-issue-name"
 labels: ["Status: Pending", "Type: Maintenance"]
 assignees:
-  - L483
+  - username
 body:
   - type: markdown
     attributes:

@@ -3,7 +3,7 @@ description: Improvements to the CI/CD pipeline
 title: "[Pipeline] kebap-cased-issue-name"
 labels: ["Status: Pending", "Type: Pipeline"]
 assignees:
-  - L483
+  - username
 body:
   - type: markdown
     attributes:

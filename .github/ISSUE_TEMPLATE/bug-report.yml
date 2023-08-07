@@ -3,7 +3,7 @@ description: Something is not working (correctly)
 title: "[Bug Report] kebap-cased-shortened-bug-behavior"
 labels: ["Status: Pending", "Type: Bug Report"]
 assignees:
-  - L483
+  - username
 body:
   - type: markdown
     attributes:

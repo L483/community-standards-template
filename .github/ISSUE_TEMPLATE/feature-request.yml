@@ -3,7 +3,7 @@ description: Introduction of new functionality
 title: "[Feature Request] kebap-cased-feature-name"
 labels: ["Status: Pending", "Type: Feature Request"]
 assignees:
-  - L483
+  - username
 body:
   - type: markdown
     attributes:
