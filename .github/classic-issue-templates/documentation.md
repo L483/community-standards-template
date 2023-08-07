@@ -3,7 +3,7 @@ name: Documentation
 about: Improvements to the documentation suite, as well as documentation pages and code comments
 title: "[Documentation] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Documentation"
-assignees: L483
+assignees: username
 ---
 
 <!--

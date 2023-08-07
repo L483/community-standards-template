@@ -1,7 +1,9 @@
 #! /bin/bash
 # --------------------------------------------------------------------------------------------------------------------
 # [L483] replace-default-assignees.sh
-#        Replaces the "assignees" field of a GitHub "issue form" YAML file with the specified assignees.
+#        Replaces the "assignees" field's entries of a GitHub issue template with the specified assignees.
+#        Assignees are inserted in the same order they are passed as arguments.
+#        It distinguishes between GitHub "issue form" .yml files, and "classic" GitHub issue template .md files.
 #        The file is modified in-place.
 #        For further information, consult --help.
 # --------------------------------------------------------------------------------------------------------------------
@@ -12,7 +14,7 @@ set -o errexit   # abort on nonzero exitstatus
 set -o nounset   # abort on unbound variable
 set -o pipefail  # do not hide errors within pipes
 # set -o verbose # trace every executed command (before variable expansion)
-# set -o xtrace  # trace what gets actually executed (after variable expansion)
+set -o xtrace  # trace what gets actually executed (after variable expansion)
 
 # script run options: end --------------------------------------------------------------------------------------------
 # functions: start ---------------------------------------------------------------------------------------------------
@@ -20,17 +22,24 @@ set -o pipefail  # do not hide errors within pipes
 # Function:
 #   find_assignees_start
 # Description:
-#   Finds the index of the "assignees" field in a GitHub "issue form" YAML file.
+#   Finds the index of the "assignees" field in a GitHub "issue form" .yml file, or a "classic" GitHub issue template .md file.
 # Arguments:
 #   @param file: the path to the file to be processed
+#   @param is_issue_form: if "true", it expects a GitHub "issue form" .yml file, otherwise a "classic" GitHub issue template .md file
 # Returns:
 #   @return: the index of the line via echo
 find_assignees_start() {
     # extract arguments
     local -r file="${1}"
+    local -r is_issue_form="${2}"
     
     # setup regex patterns
-    local -r assignees_field_start="^assignees:\s*$"
+    local assignees_field_start
+    if [[ "${is_issue_form}" == true ]]; then
+        assignees_field_start="^assignees:\s*$"
+    else
+        assignees_field_start="^assignees:((\s*)|(\s+.*))$"
+    fi
     
     # find the index of the line marking the start of the "assignees" field's entries
     local -r start_line=$(grep -n -m 1 -P "${assignees_field_start}" "${file}" | cut -d: -f1)
@@ -40,15 +49,15 @@ find_assignees_start() {
 }
 
 # Function:
-#   count_assignees
+#   count_assignees_yml
 # Description:
-#   Counts the number of entries in the "assignees" field of a GitHub "issue form" YAML file.
+#   Counts the number of entries in the "assignees" field of a GitHub "issue form" .yml file.
 # Arguments:
 #   @param file: the path to the file to be processed
 #   @param start_line: the index of the line beginning the "assignees" field
 # Returns:
 #   @return: the number of entries via echo
-count_assignees() {
+count_assignees_yml() {
     # extract arguments
     local -r file="${1}"
     local -r start_line="${2}"
@@ -90,16 +99,16 @@ count_assignees() {
 }
 
 # Function:
-#   remove_assignees
+#   remove_assignees_yml
 # Description:
-#   Removes the entries of the "assignees" field of a GitHub "issue form" YAML file.
+#   Removes the entries of the "assignees" field of a GitHub "issue form" .yml file.
 # Arguments:
 #   @param file: the path to the file to be processed
 #   @param start_line: the index of the line beginning the "assignees" field
 #   @param number_of_assignees: the number of entries in the "assignees" field
 # Returns:
 #   Nothing
-remove_assignees() {
+remove_assignees_yml() {
     # extract arguments
     local -r file="${1}"
     local -r start_line="${2}"
@@ -111,21 +120,42 @@ remove_assignees() {
     # delete old assignees from file, if there are any
     if [[ "${number_of_assignees}" -gt 0 ]]; then
         local -r end_line=$((start_line+number_of_assignees))
-        sed -arg "${sed_start_line},${end_line}d" "${file}"
+        sed -i "${sed_start_line},${end_line}d" "${file}"
     fi
 }
 
 # Function:
-#   append_assignees
+#   remove_assignees_md
 # Description:
-#   Appends a list of entries to the "assignees" field of a GitHub "issue form" YAML file.
+#   Removes the entries of the "assignees" field of a "classic" GitHub issue template .md file.
+# Arguments:
+#   @param file: the path to the file to be processed
+#   @param line_index: the index of the line of the "assignees" field
+# Returns:
+#   Nothing
+remove_assignees_md() {
+    # extract arguments
+    local -r file="${1}"
+    local -r line_index="${2}"
+    
+    # create empty assignees field string
+    local -r empty_assignees="assignees: "
+    
+    # delete old assignees from file
+    sed -i "${line_index}s/.*/${empty_assignees}/" "${file}"
+}
+
+# Function:
+#   append_assignees_yml
+# Description:
+#   Appends a list of entries to the "assignees" field of a GitHub "issue form" .yml file.
 # Arguments:
 #   @param file: the path to the file to be processed
 #   @param start_line: the index of the line beginning the "assignees" field
 #   @param assignees: the list of assignees to be appended
 # Returns:
 #   Nothing
-append_assignees() {
+append_assignees_yml() {
     # extract arguments
     local -r file="${1}"
     local -r start_line="${2}"
@@ -143,46 +173,116 @@ append_assignees() {
     new_assignees=${new_assignees::-2}
     
     # append new assignees
-    sed -arg "${start_line}a\\${new_assignees}" "${file}"
+    sed -i "${start_line}a\\${new_assignees}" "${file}"
 }
 
 # Function:
-#   handle_issue_form
+#   append_assignees_md
 # Description:
-#   Replaces the "assignees" field of a GitHub "issue form" YAML file with the specified assignees.
+#   Appends a list of entries to the "assignees" field of a "classic" GitHub issue template .md file.
+# Arguments:
+#   @param file: the path to the file to be processed
+#   @param line_index: the index of the line of the "assignees" field
+#   @param assignees: the list of assignees to be appended
+# Returns:
+#   Nothing
+append_assignees_md() {
+    # extract arguments
+    local -r file="${1}"
+    local -r line_index="${2}"
+    local -r assignees=("${@:3}")
+
+    # get old assignees line
+    local -r old_assignees_line=$(sed -n "${line_index}p" "${file}")
+
+
+    # if ending on space, then no space needed
+    # if ending on entry, comma needed
+
+    # gracefully prepare the start of the new assisgnees string for a seamless append
+    local new_assignees=""
+    local match
+    match=$(grep -m 1 -P "^assignees:\s+[a-zA-Z0-9].*$" "${file}" || true)
+    # add a ", " if the old assignees line has at least one entry
+    if [[ -n "${match}" ]]; then
+        new_assignees+=", "
+    else
+        match=$(grep -m 1 -P "^assignees:\s+$" "${file}" || true)
+        # add a " " if the old assignees line is empty and does not end on a space
+        if [[ -z "${match}" ]]; then
+            new_assignees+=" "
+        fi
+    fi
+
+    # create new assignees entries
+    for assignee in "${assignees[@]}"
+    do
+        new_assignees+="${assignee}, "
+    done
+    
+    # remove trailing comma ", "
+    new_assignees=${new_assignees::-2}
+    
+    # append new assignees
+    sed -i "${line_index}s/${old_assignees_line}/${old_assignees_line}${new_assignees}/" "${file}"
+}
+
+# Function:
+#   handle_file
+# Description:
+#   Replaces the "assignees" field's entries of a GitHub issue template with the specified assignees.
+#   It distinguishes between GitHub "issue form" .yml files, and "classic" GitHub issue template .md files.
 #   The file is modified in-place.
 #   If both the "append_only" and "delete_only" arguments are "true", the file remains unchanged.
 # Arguments:
 #   @param file: the path to the file to be processed
 #   @param append_only: if "true", no assignees are deleted
 #   @param delete_only: if "true", no assignees are appended
+#   @param is_issue_form: if "true", it expects a GitHub "issue form" .yml file, otherwise a "classic" GitHub issue template .md file
 #   @param assignees: the list of assignees to be appended
 # Returns:
 #   Nothing
-handle_issue_form() {
+handle_file() {
     # file append_only delete_only assignees
     # extract arguments
     local -r file="${1}"
     local -r append_only="${2}"
     local -r delete_only="${3}"
-    local -r assignees=("${@:4}")
+    local -r is_issue_form="${4}"
+    local -r assignees=("${@:5}")
     
     # get information about assignees the file lists
-    local -r start_line=$(find_assignees_start "${file}")
-    local number_of_assignees
-    number_of_assignees=$(count_assignees "${file}" "${start_line}")
+    local -r start_line=$(find_assignees_start "${file}" "${is_issue_form}")
     
-    # conditionally remove assignees
-    if [[ "${append_only}" == false ]]; then
-        remove_assignees "${file}" "${start_line}" "${number_of_assignees}"
-        number_of_assignees=0
-    fi
-    
-    # conditionally append assignees
-    if [[ "${delete_only}" == false ]]; then
-        local -r append_line=$((start_line+number_of_assignees))
-        append_assignees "${file}" "${append_line}" "${assignees[@]}"
-    fi
+    # treat the file as a GitHub "issue form" .yml file
+    if [[ "${is_issue_form}" == true ]]; then
+        # get the number of assignees the file lists
+        local number_of_assignees
+        number_of_assignees=$(count_assignees_yml "${file}" "${start_line}")
+        
+        # conditionally remove assignees
+        if [[ "${append_only}" == false ]]; then
+            remove_assignees_yml "${file}" "${start_line}" "${number_of_assignees}"
+            number_of_assignees=0
+        fi
+        
+        # conditionally append assignees
+        if [[ "${delete_only}" == false ]]; then
+            local -r append_line=$((start_line+number_of_assignees))
+            append_assignees_yml "${file}" "${append_line}" "${assignees[@]}"
+        fi
+    # treat the file as a "classic" GitHub issue template .md file
+    else
+        # conditionally remove assignees
+        if [[ "${append_only}" == false ]]; then
+            remove_assignees_md "${file}" "${start_line}"
+        fi
+        
+        # conditionally append assignees
+        if [[ "${delete_only}" == false ]]; then
+            append_assignees_md "${file}" "${start_line}" "${assignees[@]}"
+        fi
+    fi 
 }
 
 # Function:
@@ -195,7 +295,9 @@ handle_issue_form() {
 #   Nothing
 usage() {
     echo "Usage: ${0} [-a|--append-only] [-d|--delete-only] [assignees...]"
-    echo "Replaces the \"assignees\" field of a GitHub \"issue form\" YAML file with the specified assignees."
+    echo "Replaces the \"assignees\" field's entries of a GitHub issue template with the specified assignees."
+    echo "Assignees are inserted in the same order they are passed as arguments."
+    echo "It distinguishes between GitHub \"issue form\" .yml files, and \"classic\" GitHub issue template .md files."
     echo "The file is modified in-place."
     echo ""
     echo "Options:"
@@ -271,7 +373,7 @@ script_dir="$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")"
 
 # get paths to issue forms and templates
 readonly issue_form_dir="${script_dir}/../ISSUE_TEMPLATE"
-# readonly issue_template_dir="${script_dir}/../classic-issue-templates"
+readonly issue_template_dir="${script_dir}/../classic-issue-templates"
 readonly meta_dir="${script_dir}/../meta-templates"
 
 issue_forms=("${issue_form_dir}"/*".yml")
@@ -279,7 +381,16 @@ issue_forms+=("${meta_dir}/meta-form.yml")
 
 for file in "${issue_forms[@]}"; do
     if [[ -f "${file}" ]] && [[ "${file}" != *"config.yml" ]]; then
-        handle_issue_form "${file}" "${append_only}" "${delete_only}" "${@}"
+        handle_file "${file}" "${append_only}" "${delete_only}" true "${@}"
+    fi
+done
+
+classic_issue_templates=("${issue_template_dir}"/*".md")
+classic_issue_templates+=("${meta_dir}/meta-template.md")
+
+for file in "${classic_issue_templates[@]}"; do
+    if [[ -f "${file}" ]]; then
+        handle_file "${file}" "${append_only}" "${delete_only}" false "${@}"
     fi
 done
 exit 0

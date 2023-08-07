@@ -3,7 +3,7 @@ name: Maintenance
 about: Refactor specifically concerning adaption to updates of dependencies, target platforms, etc.
 title: "[Maintenance] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Maintenance"
-assignees: L483
+assignees: username
 ---
 
 <!--

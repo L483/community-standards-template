@@ -3,7 +3,7 @@ name: Feature Request
 about: Introduction of new functionality
 title: "[Feature Request] kebap-cased-feature-name"
 labels: "Status: Pending, Type: Feature Request"
-assignees: L483
+assignees: username
 ---
 
 <!--

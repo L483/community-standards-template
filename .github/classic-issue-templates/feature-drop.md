@@ -3,7 +3,7 @@ name: Feature Drop
 about: Removal of a whole feature (or its remains)
 title: "[Feature Drop] kebap-cased-feature-name"
 labels: "Status: Pending, Type: Feature Drop"
-assignees: L483
+assignees: username
 ---
 
 <!--

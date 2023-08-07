@@ -3,7 +3,7 @@ name: Refactor
 about: General codebase improvements not concerned with functionality and not covered by other labels
 title: "[Refactor] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Refactor"
-assignees: L483
+assignees: username
 ---
 
 <!--

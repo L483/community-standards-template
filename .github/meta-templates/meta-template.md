@@ -3,7 +3,7 @@ name: <PLACEHOLDER>
 about: Consists of resuable snippets from other issue templates to easily create new issue templates
 title: "[<PLACEHOLDER>] kebap-cased-issue-name"
 labels: "Status: Pending, Type: <PLACEHOLDER>"
-assignees: L483
+assignees: username
 ---
 
 <!--

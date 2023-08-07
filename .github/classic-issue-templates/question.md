@@ -3,7 +3,7 @@ name: Question
 about: Something needs clarification or further information and may uncover problems
 title: "[Question] kebap-cased-shortened-question"
 labels: "Status: Pending, Type: Question"
-assignees: L483
+assignees: username
 ---
 
 <!--

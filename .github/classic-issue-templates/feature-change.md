@@ -3,7 +3,7 @@ name: Feature Change
 about: Alteration, replacement, or partial removal of existing functionality
 title: "[Feature Change] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Feature Change"
-assignees: L483
+assignees: username
 
 ---
 

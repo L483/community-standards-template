@@ -3,7 +3,7 @@ name: Bug Report
 about: Something is not working (correctly)
 title: "[Bug Report] kebap-cased-shortened-bug-behavior"
 labels: "Status: Pending, Type: Bug Report"
-assignees: L483
+assignees: username
 ---
 
 <!--

@@ -3,7 +3,7 @@ name: Text Correction
 about: Refactor of any bad language/wrong text implications and grammar/punctuation/spelling fixes, etc.
 title: "[Text Correction] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Text Correction"
-assignees: L483
+assignees: username
 ---
 
 <!--

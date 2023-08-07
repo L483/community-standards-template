@@ -3,7 +3,7 @@ name: Pipeline
 about: Improvements to the CI/CD pipeline
 title: "[Pipeline] kebap-cased-issue-name"
 labels: "Status: Pending, Type: Pipeline"
-assignees: L483
+assignees: username
 ---
 
 <!--
