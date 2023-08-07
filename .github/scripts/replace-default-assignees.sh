@@ -191,14 +191,14 @@ append_assignees_md() {
     local -r file="${1}"
     local -r line_index="${2}"
     local -r assignees=("${@:3}")
-
+    
     # get old assignees line
     local -r old_assignees_line=$(sed -n "${line_index}p" "${file}")
-
-
+    
+    
     # if ending on space, then no space needed
     # if ending on entry, comma needed
-
+    
     # gracefully prepare the start of the new assisgnees string for a seamless append
     local new_assignees=""
     local match
@@ -213,7 +213,7 @@ append_assignees_md() {
             new_assignees+=" "
         fi
     fi
-
+    
     # create new assignees entries
     for assignee in "${assignees[@]}"
     do
@@ -271,7 +271,7 @@ handle_file() {
             local -r append_line=$((start_line+number_of_assignees))
             append_assignees_yml "${file}" "${append_line}" "${assignees[@]}"
         fi
-    # treat the file as a "classic" GitHub issue template .md file
+        # treat the file as a "classic" GitHub issue template .md file
     else
         # conditionally remove assignees
         if [[ "${append_only}" == false ]]; then
@@ -282,7 +282,7 @@ handle_file() {
         if [[ "${delete_only}" == false ]]; then
             append_assignees_md "${file}" "${start_line}" "${assignees[@]}"
         fi
-    fi 
+    fi
 }
 
 # Function:
@@ -312,9 +312,23 @@ usage() {
     echo "  0: if the script was executed successfully"
     echo "  1: if an unexpected option was passed"
     echo ""
-    echo "If both the \"append-only\" and \"delete-only\" options are set, the file remains unchanged."
-    echo "If no arguments are passed, the script prints this usage information."
-    echo "To clear the \"assignees\" field, pass the \"delete-only\" option without any assignees."
+    echo "Caveats:"
+    echo "  1. If both the \"append-only\" and \"delete-only\" options are set, the file remains unchanged."
+    echo "  2. If no arguments are passed, the script prints this usage information."
+    echo "     To clear the \"assignees\" field, pass the \"delete-only\" option without any assignees."
+    echo "  3. Currently, the script makes specific and static assumptions about the file locations."
+    echo "     The meta templates must be inside the \".github/meta-templates\" directory."
+    echo "     All other GitHub \"issue form\" .yml files must be inside the \".github/ISSUE_TEMPLATE\" directory."
+    echo "     All other \"classic\" GitHub issue template .md files must be inside the \".github/classic-issue-templates\" directory."
+    echo "  4. The script expects that the provided files are correct."
+    echo "     It does not make any effort to validate the files and may fail if the files are malformed."
+    echo "  5. Currently, the script expects that the provided assignees are valid GitHub usernames."
+    echo "     It does not make any effort to validate the assignees and just inserts them."
+    echo "  6. Currently, the script expects that the provided assignees are unique, even when only appending assignees."
+    echo "     It does not make any effort to create a duplicate-free list of assignees."
+    echo "  7. Currently, all indentations are hard-coded as 2 spaces."
+    echo ""
+    echo "  Caveats starting with \"Currently\" may be addressed in future versions if requested."
 }
 
 # functions: end -----------------------------------------------------------------------------------------------------
